@@ -2,7 +2,6 @@
 /**
  * Title: single
  * Slug: grabber/single
- * Categories: hidden
  * Inserter: no
  */
 ?>

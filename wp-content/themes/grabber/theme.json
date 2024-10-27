@@ -24,6 +24,20 @@
 			"title": "Page with sidebar"
 		},
 		{
+			"name": "wp-custom-template-page-full-width",
+			"postTypes": [
+				"page"
+			],
+			"title": "Page without sidebar - Full Width"
+		},
+		{
+			"name": "coming-soon",
+			"postTypes": [
+				"page"
+			],
+			"title": "Coming Soon"
+		},
+		{
 			"name": "sidebar-post-template",
 			"postTypes": [
 				"post"
@@ -31,12 +45,74 @@
 			"title": "Post with sidebar"
 		},
 		{
+			"name": "checkout",
+			"postTypes": [
+				"product"
+			],
+			"title": "Checkout"
+		},
+		{
 			"name": "single-product",
+			"postTypes": [
+				"product"
+			],
 			"title": "Single product"
 		},
 		{
 			"name": "archive-product",
+			"postTypes": [
+				"product"
+			],
+			"title": "archive product"
+		},
+		{
+			"name": "product-search-results",
+			"postTypes": [
+				"product"
+			],
+			"title": "Product Search Result"
+		},
+		{
+			"name": "archive-product",
+			"postTypes": [
+				"product"
+			],
 			"title": "Shop (Product archive)"
+		},
+		{
+			"name": "taxonomy-product_attribute",
+			"postTypes": [
+				"product"
+			],
+			"title": "Product Search Result"
+		},
+		{
+			"name": "taxonomy-product_cat",
+			"postTypes": [
+				"product_cat"
+			],
+			"title": "Product Category"
+		},
+		{
+			"name": "taxonomy-product_tag",
+			"postTypes": [
+				"product_tag"
+			],
+			"title": "Product Category"
+		},
+		{
+			"name": "order-confirmation",
+			"postTypes": [
+				"product"
+			],
+			"title": "order confirmation"
+		},
+		{
+			"name": "cart",
+			"postTypes": [
+				"product"
+			],
+			"title": "Cart"
 		}
 	],
 	"settings": {
@@ -493,31 +569,6 @@
 			"core/site-title": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
-				}
-			},
-			"woocommerce/filter-wrapper": {
-				"elements": {
-					"heading": {
-						"typography": {
-							"fontSize": "var(--wp--preset--font-size--medium)",
-							"fontWeight": "400"
-						}
-					}
-				}
-			},
-			"woocommerce/product-categories": {
-				"css": "& ul{list-style:none;} & ul:first-child{padding-left:0;}"
-			},
-			"woocommerce/product-price": {
-				"color": {
-					"text": "var(--wp--preset--color--contrast)"
-				},
-				"elements": {
-					"link": {
-						"color": {
-							"text": "var(--wp--preset--color--contrast)"
-						}
-					}
 				}
 			}
 		},

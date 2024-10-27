@@ -117,19 +117,23 @@ require_once get_theme_file_path( 'inc/register-block-styles.php' );
 
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'inc/register-block-patterns.php' );
+
+
 add_action( 'after_switch_theme', 'grabber_activation_message' );
 function grabber_activation_message() {
   // Get the current user.
   $user = wp_get_current_user();
-	$the_theme = wp_get_theme()->get( 'Name' );
+  $the_theme = wp_get_theme()->get( 'Name' );
+
   // Check if the user has already dismissed the message.
   if ( get_user_meta( $user->ID, 'grabber_activation_message', true ) ) {
     return;
   }
 
+  // Properly escape all dynamic data
   $message = '<div class="notice notice-success is-dismissible">
-    <a href="' . admin_url( 'themes.php?page=grabber-info' ) . '" target="_blank"><img style="max-width: 100%;" src="' . get_template_directory_uri() . '/assets/images/theme-setup.png" alt="'.$the_theme.'"></a>
-    <p>Congratulations on activating the '.$the_theme.'! To get started, please visit the <a href="' . admin_url( 'site-editor.php' ) . '" class="buttona">Site Editor</a> to customize your theme settings.</p>
+    <a href="' . esc_url( admin_url( 'themes.php?page=grabber-info' ) ) . '" target="_blank"><img style="max-width: 100%;" src="' . esc_url( get_template_directory_uri() . '/assets/images/theme-setup.png' ) . '" alt="' . esc_attr( $the_theme ) . '"></a>
+    <p>Congratulations on activating the ' . esc_html( $the_theme ) . '! To get started, please visit the <a href="' . esc_url( admin_url( 'site-editor.php' ) ) . '" class="button">Site Editor</a> to customize your theme settings.</p>
     <button type="button" class="notice-dismiss"></button>
   </div>';
 
