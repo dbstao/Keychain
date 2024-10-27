@@ -264,7 +264,7 @@ $wp_customize->add_control( 'menu_text_transform', array(
 $wp_customize->add_setting(
 	'aster_photography_enable_header_search_section',
 	array(
-		'default'           => false,
+		'default'           => true,
 		'sanitize_callback' => 'aster_photography_sanitize_switch',
 	)
 );

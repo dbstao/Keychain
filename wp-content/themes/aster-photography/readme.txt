@@ -4,7 +4,7 @@ Contributors: asterthemes
 Tags: one-column, two-columns, custom-background, custom-logo, custom-colors, custom-header, custom-menu, flexible-header, featured-images, threaded-comments, translation-ready, theme-options, sticky-post, footer-widgets, full-width-template, left-sidebar, right-sidebar, e-commerce, blog, photography, post-formats
 Requires at least: 5.0
 Tested up to: 6.6
-Stable tag: 1.1
+Stable tag: 1.2
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -30,6 +30,9 @@ Yes, the theme is integrated to work with following plugins:
 
 == Changelog ==
 
+= 1.0 =
+* Initial release
+
 = 1.1 =
 * Added getting started.
 * Added notice.
@@ -37,8 +40,17 @@ Yes, the theme is integrated to work with following plugins:
 * Updated pot file.
 * Added demo impoter.
 
-= 1.0 =
-* Initial release
+= 1.2 =
+* Added Getting Started JS and CSS.
+* Added pot file.
+* Added CSS for Nav Menus.
+* Added CSS for Sticky post.
+* Added Page Title and Settings.
+* Updated Footer Column Setting.
+* Added Read More Button Settings.
+* Updated read more button CSS and added hover effects.
+* Updated Google Fonts Library.
+* Added Documentation Button in Customizer.
 
 == Images Screenshot ==
 

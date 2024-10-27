@@ -8,7 +8,7 @@ function aster_photography_dynamic_css() {
 
 	$aster_photography_site_title_font       = get_theme_mod( 'aster_photography_site_title_font', 'Dynalight' );
 	$aster_photography_site_description_font = get_theme_mod( 'aster_photography_site_description_font', 'Mulish' );
-	$aster_photography_header_font           = get_theme_mod( 'aster_photography_header_font', 'Mulish' );
+	$aster_photography_header_font           = get_theme_mod( 'aster_photography_header_font', 'Cormorant Garamond' );
 	$aster_photography_content_font             = get_theme_mod( 'aster_photography_content_font', 'Mulish' );
 
 	// Enqueue Google Fonts

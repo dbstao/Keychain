@@ -55,6 +55,22 @@ function aster_photography_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Doc Section.
+	$wp_customize->add_section(
+		new Aster_Photography_Upsell_Section(
+			$wp_customize,
+			'doc_section',
+			array(
+				'title'            => __( 'Documentation', 'aster-photography' ),
+				'button_text'      => __( 'Free Doc', 'aster-photography' ),
+				'url'              => 'https://demo.asterthemes.com/docs/aster-photography-free',
+				'background_color' => '#000000',
+				'text_color'       => '#fff',
+				'priority'         => 1,
+			)
+		)
+	);
+
 	// Theme Options.
 	require get_template_directory() . '/theme-library/customizer/theme-options.php';
 

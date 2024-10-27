@@ -8,7 +8,7 @@
 
 <div id="help-panel" class="panel-left visible">
     <div id="#help-panel" class="steps">  
-        <h4>
+        <h4 class="cc">
             <?php esc_html_e( 'Quick Setup for Home Page', 'aster-photography' ); ?>
             <a href="<?php echo esc_url( 'https://demo.asterthemes.com/docs/aster-photography-free' ); ?>" class="button button-primary" style="margin-left: 5px; margin-right: 10px;" target="_blank"><?php esc_html_e( 'Free Documentation', 'aster-photography' ); ?></a>
         </h4>

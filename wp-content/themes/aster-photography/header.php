@@ -18,7 +18,7 @@ $aster_photography_header_button_link  = get_theme_mod( 'aster_photography_heade
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+    <link rel="icon" href="data:,">
 	<?php wp_head(); ?>
 </head>
 
@@ -118,7 +118,7 @@ $aster_photography_header_button_link  = get_theme_mod( 'aster_photography_heade
                         </div>
                         <div class="bottom-header-right-part">
                             <?php
-                                $aster_photography_enable_header_search_section = get_theme_mod( 'aster_photography_enable_header_search_section', false );
+                                $aster_photography_enable_header_search_section = get_theme_mod( 'aster_photography_enable_header_search_section', true );
                                 if ( $aster_photography_enable_header_search_section ) : ?>
                                 <span class="search-main">
                                   <span class="btn">
@@ -147,16 +147,17 @@ $aster_photography_header_button_link  = get_theme_mod( 'aster_photography_heade
 </header>
 <?php
 if ( ! is_front_page() || is_home() ) {
-
 	if ( is_front_page() ) {
-
 		require get_template_directory() . '/sections/sections.php';
 		aster_photography_homepage_sections();
 
 	}
-
 	?>
-
+    <?php
+        if (!is_front_page() || is_home()) {
+            get_template_part('page-header');
+        }
+    ?>
 	<div id="content" class="site-content">
 		<div class="asterthemes-wrapper">
 			<div class="asterthemes-page">

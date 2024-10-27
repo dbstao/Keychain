@@ -82,6 +82,7 @@ for ( $i = 1; $i <= 3; $i++ ) {
 	$wp_customize->add_control(
 		'aster_photography_banner_slider_content_post_' . $i,
 		array(
+			// translators: %d is the post number
 			'label'           => sprintf( esc_html__( 'Select Post %d', 'aster-photography' ), $i ),
 			'section'         => 'aster_photography_banner_section',
 			'settings'        => 'aster_photography_banner_slider_content_post_' . $i,
@@ -102,6 +103,7 @@ for ( $i = 1; $i <= 3; $i++ ) {
 	$wp_customize->add_control(
 		'aster_photography_banner_slider_content_page_' . $i,
 		array(
+			// translators: %d is the page number
 			'label'           => sprintf( esc_html__( 'Select Page %d', 'aster-photography' ), $i ),
 			'section'         => 'aster_photography_banner_section',
 			'settings'        => 'aster_photography_banner_slider_content_page_' . $i,

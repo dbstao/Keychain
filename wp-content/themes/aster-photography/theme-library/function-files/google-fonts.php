@@ -49,8 +49,8 @@ function aster_photography_get_fonts_url() {
         $fonts[] = get_theme_mod( 'aster_photography_site_description_font', 'Mulish' );
     }
 
-    if ( ! empty( get_theme_mod( 'aster_photography_header_font', 'Mulish' ) ) ) {
-        $fonts[] = get_theme_mod( 'aster_photography_header_font', 'Mulish' );
+    if ( ! empty( get_theme_mod( 'aster_photography_header_font', 'Cormorant Garamond' ) ) ) {
+        $fonts[] = get_theme_mod( 'aster_photography_header_font', 'Cormorant Garamond' );
     }
 
     if ( ! empty( get_theme_mod( 'aster_photography_content_font', 'Mulish' ) ) ) {

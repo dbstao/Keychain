@@ -92,7 +92,7 @@ if(class_exists('woocommerce')){
 	}
 
 	$wp_customize->add_setting('aster_photography_trending_product_category',array(
-		'default'	=> 'select',
+		'default'	=> 'uncategorized',
 		'sanitize_callback' => 'aster_photography_sanitize_select',
 	));
 	$wp_customize->add_control('aster_photography_trending_product_category',array(

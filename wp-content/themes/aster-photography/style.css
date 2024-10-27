@@ -4,7 +4,7 @@ Theme URI: https://asterthemes.com/products/free-photography-wordpress-theme
 Author: asterthemes
 Author URI: https://asterthemes.com
 Description: The Aster Photography WordPress Theme is an ideal solution tailored for photographers and photography businesses looking to showcase their work in a visually stunning and professional manner. Whether you're involved in portrait photography, wedding photography, or commercial photography, this theme is designed to elevate your online portfolio. With its clean, minimalist layout, the Aster Photography WordPress Theme emphasises your images, allowing visitors to fully appreciate your photography services. It’s perfect for freelance photographers, event photographers, or those offering photography packages, giving you the flexibility to display your photography pricing, rates, and custom services. Additionally, Aster Photography WordPress Theme is versatile enough to cater to a wide range of photography niches, including nature photography, landscape photography, real estate photography, and fashion photography. With customizable features like personalised galleries, photo sliders, and testimonial sections, you can create an impressive portfolio that reflects your unique style. The theme is fully responsive, ensuring your photography portfolio looks great on all devices, from desktop to mobile. Additional features include SEO optimization, fast loading times, and integration with social media to boost your online presence. Whether you're a seasoned professional or just starting your photography business, the Aster Photography WordPress Theme is the perfect tool for showcasing your talent and growing your brand.
-Version: 1.1
+Version: 1.2
 Tested up to: 6.6
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
@@ -702,7 +702,7 @@ big {
 /* Elements
 --------------------------------------------- */
 :root {
-	--primary-color: #000000;
+	--primary-color: var(--primary-color);
 	--background-color-white: #1E1E1E;
 	--background-color-grey: #F6F7FB;
 	--background-color-light-grey: #f8f8f8;
@@ -746,7 +746,7 @@ big {
 body {
 	font-size: 1rem;
 	font-family: var(--font-main);
-	color: #000000;
+	color: var(--primary-color);
 }
 
 body.page {
@@ -1582,7 +1582,7 @@ a.asterthemes-button {
     display: inline-flex;
     align-items: center;
     color: #ffffff;
-    background: #000000;
+    background: var(--primary-color);
     border-radius: 3px;
     padding: 8px 35px;
     transition: all 0.3s ease;
@@ -1946,7 +1946,7 @@ textarea {
 
 .main-navigation a:focus, .main-navigation a:hover {
 	opacity: 1;
-	color: var(--primary-color);
+	color: #919191;
 }
 
 .main-navigation .current_page_item > a,
@@ -1955,7 +1955,7 @@ textarea {
 .main-navigation .current-menu-ancestor > a {
 	position: relative;
 	opacity: 1;
-	color: var(--primary-color);
+	color: #919191;
 }
 
 @media (min-width: 992px) {
@@ -2291,6 +2291,16 @@ textarea {
 	.main-navigation ul:not(.sub-menu):not(.children) > li {
 		display: inline-block;
 		margin-bottom: 0px;
+	}
+}
+
+.menu-primary-menu-container, .menu {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+	.menu-primary-menu-container, .menu {
+		text-align: left;
 	}
 }
 
@@ -2775,7 +2785,7 @@ p.not-para {
     font-size: 20px;
 }
 .paganot-found-button a {
-    background: #000000;
+    background: var(--primary-color);
     border-radius: 11px;
     padding: 12px 12px;
     color: #fff!important;
@@ -3001,7 +3011,7 @@ span.nav-title {
 	    border-bottom: 1px solid #777777 !important;
 	}
 	.home header.site-header .header-main-wrapper .bottom-header-outer-wrapper .bottom-header-part {
-    	background: #919191 !important;
+    	background: var(--primary-color) !important;
 	}
 }
 
@@ -3327,7 +3337,7 @@ div.wp-block .editor-rich-text__editable code {
 
 .entry-content .wp-block-code code,
 .entry-content .wp-block-code .editor-plain-text {
-	background-color: #000000;
+	background-color: var(--primary-color);
 	padding: 10px;
 	color: inherit;
 	color: #fff;
@@ -4281,7 +4291,7 @@ div.wp-block .editor-rich-text__editable code {
 
 .entry-content .wp-block-code code,
 .entry-content .wp-block-code .editor-plain-text {
-	background-color: #000000;
+	background-color: var(--primary-color);
 	padding: 10px;
 	color: inherit;
 	color: #fff;
@@ -5154,7 +5164,7 @@ nav.breadcrumb-trail ul.trail-items {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	color: #000000;
+	color: var(--primary-color);
 }
 
 nav.breadcrumb-trail ul.trail-items li {
@@ -5163,7 +5173,7 @@ nav.breadcrumb-trail ul.trail-items li {
 
 nav.breadcrumb-trail ul.trail-items li a {
 	text-decoration: none;
-	color: #000000;
+	color: var(--primary-color);
 }
 
 nav.breadcrumb-trail ul.trail-items li a:focus, nav.breadcrumb-trail ul.trail-items li a:hover {
@@ -5293,20 +5303,20 @@ nav.breadcrumb-trail ul.trail-items li:last-child::after {
 	padding: 15px;
 }
 .right-sidebar .asterthemes-wrapper .asterthemes-page .widget {
-    background: #000;
-    border-right: 5px solid #919191 !important;
-    border-left: 5px solid #919191 !important;
+    background: #919191;
+    border-right: 5px solid var(--primary-color) !important;
+    border-left: 5px solid var(--primary-color) !important;
     border-radius: 12px;
 }
 
 .left-sidebar .asterthemes-wrapper .asterthemes-page .widget {
-    background: #000;
-    border-right: 5px solid #919191 !important;
-    border-left: 5px solid #919191 !important;
+    background: #919191;
+    border-right: 5px solid var(--primary-color) !important;
+    border-left: 5px solid var(--primary-color) !important;
     border-radius: 12px;
 }
 .left-sidebar .asterthemes-wrapper .asterthemes-page .widget {
-    background: #000;
+    background: #919191;
 }
 .footer-widgets-wrapper .widget{
 	margin-bottom: 0;
@@ -5742,7 +5752,7 @@ form.woo-pro-search button.search-button {
     position: absolute;
     color: #fff;
     padding: 10px 12px;
-    background: #000000;
+    background: var(--primary-color);
     border: none;
     border-radius: 0px 30px 30px 0px;
     margin-left: -40px;
@@ -5769,7 +5779,7 @@ header.site-header {
 header.site-header .header-main-wrapper .top-header-part {
 	position: relative;
 	padding: 10px 0;
-	background: #000000;
+	background: var(--primary-color);
 }
 span.search-main {
     position: relative;
@@ -5858,7 +5868,7 @@ header.site-header .header-main-wrapper .bottom-header-outer-wrapper .bottom-hea
 }
 
 header.site-header .header-main-wrapper .bottom-header-outer-wrapper .bottom-header-part {
-	background: #919191;
+	background: var(--primary-color);
 	padding:25px 10px;
 	z-index: 99;
 	width: 100%;
@@ -6321,7 +6331,7 @@ body:not(.scroll-up) header.site-header .header-main-wrapper .bottom-header-part
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: #00000078;
+	background: var(--primary-color)78;
 	width: 100%;
     height: 750px;
 }
@@ -6340,7 +6350,7 @@ section#aster_photography_banner_section {
 
 .banner-section.banner-style-1 .banner-single .banner-caption .banner-catption-wrapper .banner-caption-title {
     font-size: 40px;
-    font-family: Cormorant Garamond;
+	font-family: var(--font-heading);
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.2;
@@ -6406,7 +6416,7 @@ h5.product-text {
 h5.product-text a {
     font-size: 14px;
     font-weight: 500;
-    color: #000000;
+    color: var(--primary-color);
 }
 .banner-slider-btn.slide-btn-2 a {
     background: transparent;
@@ -6539,7 +6549,7 @@ h5.product-text a {
     background: #FAFAFA;
 }
 span.price {
-    color: #000000;
+    color: var(--primary-color);
     font-size: 15px;
     font-weight: 700;
     line-height: 12px;
@@ -6585,7 +6595,7 @@ span.price del {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
-    color: #000000;
+    color: var(--primary-color);
     margin-bottom: 30px;
 }
 .tab-post .excerpt-content p{
@@ -6629,7 +6639,7 @@ span.price del {
     position: relative;
 }
 .tab-product .box-content a {
-    background: #000000;
+    background: var(--primary-color);
     color: #fff;
     font-weight: 600;
     padding: 8px 15px;
@@ -6972,13 +6982,27 @@ a.aster-photography-scroll-to-top.show {
     margin-top: 0px;
     color: var(--background-color-white);
     border: 1px solid;
-    box-shadow: #0000004f 0px 0px 8px;
-    border-right: 5px solid #919191 !important;
-    border-left: 5px solid #919191 !important;
+    box-shadow: var(--primary-color)4f 0px 0px 8px;
+    border-right: 5px solid var(--primary-color) !important;
+    border-left: 5px solid var(--primary-color) !important;
+}
+.sticky .mag-post-single:before {
+    position: absolute;
+    content: '';
+    background: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    border-radius: 20px;
+	opacity: 30%;
 }
 .sticky .mag-post-single {
-    background: #e5e5e5;
+    position: relative;
+    z-index: 0;
 }
+
 .wp-block-button.is-style-squared a {
     border-radius: 0pc;
 }
@@ -7007,7 +7031,7 @@ span.onsale {
   position: absolute;
   top: 0;
   left: 0;
-  background: #000000;
+  background: var(--primary-color);
   color: #fff;
   padding: 2px 5px;
   font-weight: bold;
@@ -7028,7 +7052,7 @@ span.onsale {
     margin: 3px;
     font-size: 15px;
     line-height: 15px;
-    background: #000000;
+    background: var(--primary-color);
 }
 .pro-button a:hover,
 .woocommerce #respond input#submit:hover,
@@ -7071,7 +7095,7 @@ ins {
   color: #ffc53f;
 }
 .woocommerce .woocommerce-ordering select {
-  background: #000000;
+  background: var(--primary-color);
   color: #fff;
   padding: 2px;
   border: 1px solid #e3e3e3;
@@ -7109,7 +7133,7 @@ textarea {
 
 .woocommerce-account .woocommerce-MyAccount-navigation ul li {
   display: inline-block;
-  background: #000000;
+  background: var(--primary-color);
   padding: 10px;
   margin-right: 0px;
   font-size: 15px;
@@ -7150,7 +7174,7 @@ h2.woocommerce-loop-product__title {
     
 }
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
-    background: #000000;
+    background: var(--primary-color);
     color: #ffff;
     margin-bottom: 35px;
 }
@@ -7242,7 +7266,7 @@ body.no-sidebar:not(.asterthemes-boxed-layout) .alignwide {
 		top: 32px;
 	}
 	.is-sticky .bottom-header-part{
-		background: #919191 !important;
+		background: var(--primary-color) !important;
 	}
 	.is-sticky {
 		left: 0;
@@ -7349,8 +7373,9 @@ body.no-sidebar:not(.asterthemes-boxed-layout) .alignwide {
 	}
 
 	nav.wp-calendar-nav span a{
-		color: #ff5d80 !important;
+		color: var(--primary-color) !important;
 	}
+	
 	/* Read More CSS */
 
 	.read-more-button {
@@ -7358,57 +7383,302 @@ body.no-sidebar:not(.asterthemes-boxed-layout) .alignwide {
 		align-items: center;
 		padding: 10px 20px;
 		margin-top: 10px;
-		background: var(--primary-color);
+		background-color: #000;
 		color: #ffffff !important;
 		text-decoration: none;
 		border-radius: 5px;
 		font-size: 16px;
+		transition: all 0.5s ease;
 	}
 	
 	.read-more-button .dashicons {
 		margin-left: 8px;
 		font-size: 20px;
+		transition: transform 0.5s ease;
 	}
 	
 	.read-more-button:hover {
-		background-color: #000;
+		background-color: var(--primary-color);
 		cursor: pointer;
 	}
+	
+	.mag-post-read-more a {
+		transition: all 0.5s ease;
+	}
+	
+	.mag-post-read-more i {
+		padding-left: 10px;
+		transition: transform 0.5s ease;
+	}
+	
+	.read-more-button:hover .dashicons, .read-more-button:hover i {
+		transform: translateX(8px);
+	}
+
+	.mag-post-read-more a {
+		position: relative;
+	}
+	
+	.read-more-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100em;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.1);
+		transition: left 0.5s ease;
+	}
+	
+	.read-more-button:hover::before {
+		left: 0;
+	}
+	
+
 	div#content {
 		margin-top: 3em;
 	}
-	.dt_footer-widgets.one-column .footer-one-column {
-        width: 100%;
-    }
-    
-    .dt_footer-widgets.two-columns .footer-one-column {
-        width: 50%;
-    }
-    
-    .dt_footer-widgets.three-columns .footer-one-column {
-        width: 33.33%;
-    }
-    
-    .dt_footer-widgets.four-columns .footer-one-column {
-        width: 25%;
-    }
 
-    @media only screen and (max-width: 800px) {
-        .calendar_wrap {
-            font-size: 14px;
-        }
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .footer-one-column{
-            width: 100% !important;
-        }
-        .dt_footer-widgets .footer-widgets-column {
-            display: block !important;
-        }
-    }
-	.dt_footer-widgets .footer-widgets-column .widget ul:not(.aster-photography-tabs) ul{
-        margin-left: 0px;
-        padding-left: 0px;
+	/*------------------------------------* PAGE TITLE HEADER CSS*------------------------------------*/	
+
+	h1.page-header-title{
+		font-size: 50px;
 	}
-    
+	h2.page-header-title{
+		font-size: 40px;
+	}
+	h3.page-header-title{
+		font-size: 30px;
+	}
+	h4.page-header-title{
+		font-size: 26px;
+	}
+	h5.page-header-title{
+		font-size: 24px;
+	}
+	h6.page-header-title{
+		font-size: 22px;
+	}
+
+	.page-header {
+		position: relative;
+		background-color: #f5f5f5;
+		padding: 50px 0;
+	}
+	.page-header .container {
+		position: relative;
+	}
+	
+	.page-header-title {
+		display: block;
+		line-height: 1.4em;
+		margin: 0;
+		color: var(--primary-color);
+	}
+
+	h2.page-header-title{
+		margin: 5px 0;
+	}
+  
+	nav.breadcrumb-trail.breadcrumbs {
+		margin: 5px 0;
+	}
+
+	.header-style-centered .page-header-inner {
+		text-align: center;
+	}
+
+	.header-style-inline .page-header-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+	@media only screen and (max-width: 700px) {
+    	.hide-on-mobile {
+			display: none;
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1000px) {
+		.hide-on-tablet {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 900px) {
+    	.hide-on-tablet-mobile {
+			display: none;
+		}
+	}
+
+	header.page-header.has-background-image{
+		position: relative;
+	}
+	
+	header.page-header.has-background-image .page-header-inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+
+	header.page-header {
+		overflow-wrap: anywhere;
+	}
+	
+	.woocommerce-products-header__title {
+		display: none;
+	}
+	
+	@media only screen and (max-width: 700px) {
+		.asterthemes-wrapper.page-header-inner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		nav.breadcrumb-trail.breadcrumbs {
+			width: 100%;
+		}
+		.page-header-title {
+			width: 100%;
+		}
+		.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+			width: 100%;
+			float: left;
+			clear: both;
+			margin: 0 0 2.992em;
+		}
+	}
+		
+	h2.woocommerce-loop-product__title {
+	    	overflow-wrap: anywhere;
+	}
+	div#tab-description {
+		overflow-wrap: anywhere;
+	}
+
+	.widget ol:not(.aster-photography-tabs) ol, .widget ol:not(.aster-photography-tabs) ul, .widget ul:not(.aster-photography-tabs) ol, .widget ul:not(.aster-photography-tabs) ul {
+		padding-top: 0px !important;
+		margin-left: 0px !important;
+	}
+	@media only screen and (max-width: 900px) {
+		.widget ol:not(.aster-photography-tabs) ol, .widget ol:not(.aster-photography-tabs) ul, .widget ul:not(.aster-photography-tabs) ol, .widget ul:not(.aster-photography-tabs) ul {
+			padding-left: 0px !important;
+		}
+	}
+	
+	.entry-content {
+	    overflow-wrap: anywhere;
+	}
+	
+	.asterthemes-wrapper.page-header-inner{
+		gap: 10px;
+	}
+
+	.dt_footer-widgets.one-column .footer-one-column {
+		width: 100%;
+	}
+	
+	.dt_footer-widgets.two-columns .footer-one-column {
+		width: 50%;
+	}
+	
+	.dt_footer-widgets.three-columns .footer-one-column {
+		width: 33.33%;
+	}
+	
+	.dt_footer-widgets.four-columns .footer-one-column {
+		width: 25%;
+	}
+
+	.site-logo {
+		text-align: left;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.calendar_wrap {
+			font-size: 14px;
+		}
+	}
+	
+	@media only screen and (max-width: 600px) {
+		.footer-one-column{
+			width: 100% !important;
+		}
+		.dt_footer-widgets .footer-widgets-column {
+			display: block !important;
+		}
+		.site-logo {
+			text-align: center;
+		}
+	}
+
+	/* ARCHIVE LAYOUT */
+
+	.aster-photography-archive-layout {
+		margin-bottom: 30px;
+	}
+	
+	.aster-photography-archive-layout.grid-layout {
+		display: grid;
+		grid-gap: 30px;
+	}
+	
+	.aster-photography-archive-layout.grid-layout article {
+		margin-bottom: 0;
+	}
+	
+	.aster-photography-archive-layout.grid-layout.column-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.aster-photography-archive-layout.grid-layout.column-3 {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+	
+	.aster-photography-archive-layout.grid-layout.column-4 {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px;
+	}
+
+	.aster-photography-archive-layout.grid-layout.column-4 .mag-post-single{
+		padding: 15px;
+	}
+
+	.aster-photography-archive-layout.grid-layout.column-3 .read-more-button {
+		padding: 10px 10px;
+	}
+
+	.aster-photography-archive-layout.grid-layout.column-4 .read-more-button {
+		padding: 10px 15px;
+	}
+	
+	@media (max-width: 991px) {
+		.aster-photography-archive-layout.grid-layout.column-4 {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.aster-photography-archive-layout.grid-layout.column-4, .aster-photography-archive-layout.grid-layout.column-3 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	
+	@media (max-width: 600px) {
+		.aster-photography-archive-layout.grid-layout.column-4,.aster-photography-archive-layout.grid-layout.column-2,.aster-photography-archive-layout.grid-layout.column-3 {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.page-header.has-background-image{
+		padding:0;
+	}
+	footer#colophon .asterthemes-wrapper {
+		padding: 0;
+	}

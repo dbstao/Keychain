@@ -13,7 +13,6 @@ get_header();
 <main id="primary" class="site-main">
 
 	<?php
-	do_action( 'aster_photography_breadcrumb' );
 	while ( have_posts() ) :
 		the_post();
 

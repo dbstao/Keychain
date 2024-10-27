@@ -62,14 +62,14 @@ function aster_photography_getting_started_page(){
 					<div class="btns-getstart">
 						<a href="<?php echo esc_url( admin_url( 'customize.php' ) ); ?>"target="_blank" class="button button-primary"><?php esc_html_e( 'Customize', 'aster-photography' ); ?></a>
 						<a class="button button-primary" href="<?php echo esc_url( 'https://wordpress.org/support/theme/aster-photography/reviews/#new-post' ); ?>" title="<?php esc_attr_e( 'Visit the Review', 'aster-photography' ); ?>" target="_blank">
-							<?php esc_html_e( 'REVIEW', 'aster-photography' ); ?>
+							<?php esc_html_e( 'Review', 'aster-photography' ); ?>
 						</a>
 						<a class="button button-primary" href="<?php echo esc_url( 'https://wordpress.org/support/theme/aster-photography' ); ?>" title="<?php esc_attr_e( 'Visit the Support', 'aster-photography' ); ?>" target="_blank">
-							<?php esc_html_e( 'CONTACT SUPPORT', 'aster-photography' ); ?>
+							<?php esc_html_e( 'Contact Support', 'aster-photography' ); ?>
 						</a>
 					</div>
 					<div class="btns-wizard">
-						<a class="wizard" href="<?php echo esc_url( admin_url( 'themes.php?page=movingtruckrental-wizard' ) ); ?>"target="_blank" class="button button-primary"><?php esc_html_e( 'One Click Demo Setup', 'aster-photography' ); ?></a>
+						<a class="wizard" href="<?php echo esc_url( admin_url( 'themes.php?page=asterphotography-wizard' ) ); ?>"target="_blank" class="button button-primary"><?php esc_html_e( 'One Click Demo Setup', 'aster-photography' ); ?></a>
 					</div>
 				</div>
 				<div class="intro-img">

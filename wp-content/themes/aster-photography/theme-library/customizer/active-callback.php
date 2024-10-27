@@ -15,6 +15,9 @@ function aster_photography_is_breadcrumb_enabled( $control ) {
 function aster_photography_is_layout_enabled( $control ) {
 	return ( $control->manager->get_setting( 'aster_photography_website_layout' )->value() );
 }
+function aster_photography_is_pagetitle_bcakground_image_enabled( $control ) {
+	return ( $control->manager->get_setting( 'aster_photography_page_header_style' )->value() );
+}
 
 // Header Options.
 function aster_photography_is_topbar_enabled( $control ) {

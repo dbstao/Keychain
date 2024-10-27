@@ -57,7 +57,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'aster_photography_header_font',
 	array(
-		'default'           => 'Mulish',
+		'default'           => 'Cormorant Garamond',
 		'sanitize_callback' => 'aster_photography_sanitize_google_fonts',
 	)
 );

@@ -317,7 +317,8 @@ function aster_photography_output_footer_copyright_content() {
         $aster_photography_text = esc_html($aster_photography_copyright_text);
     } else {
         $aster_photography_default_text = '<a href="'. esc_url(__('https://asterthemes.com/products/free-photography-wordpress-theme','aster-photography')) . '" target="_blank"> ' . esc_html($aster_photography_theme_data->get('Name')) . '</a>' . '&nbsp;' . esc_html__('by', 'aster-photography') . '&nbsp;<a target="_blank" href="' . esc_url($aster_photography_theme_data->get('AuthorURI')) . '">' . esc_html(ucwords($aster_photography_theme_data->get('Author'))) . '</a>';
-        $aster_photography_default_text .= sprintf(esc_html__(' | Powered by %s', 'aster-photography'), '<a href="' . esc_url(__('https://wordpress.org/', 'aster-photography')) . '" target="_blank">WordPress</a>. ');
+		/* translators: %s: a link to WordPress */
+		$aster_photography_default_text .= sprintf(esc_html__(' | Powered by %s', 'aster-photography'), '<a href="' . esc_url(__('https://wordpress.org/', 'aster-photography')) . '" target="_blank">WordPress</a>. ');
         $aster_photography_text = $aster_photography_default_text;
     }
     ?>
@@ -327,38 +328,39 @@ function aster_photography_output_footer_copyright_content() {
 add_action('aster_photography_footer_copyright', 'aster_photography_output_footer_copyright_content');
 
 if ( ! function_exists( 'aster_photography_footer_widget' ) ) :
-function aster_photography_footer_widget() {
-	$aster_photography_footer_widget_column	= get_theme_mod('aster_photography_footer_widget_column','4'); 
-		if ($aster_photography_footer_widget_column == '4') {
-			$aster_photography_column = '3';
-		} elseif ($aster_photography_footer_widget_column == '3') {
-			$aster_photography_column = '4';
-		} elseif ($aster_photography_footer_widget_column == '2') {
-			$aster_photography_column = '6';
-		} else{
-			$aster_photography_column = '12';
-		}
-	if($aster_photography_footer_widget_column !==''): 
-	?>
-	<div class="dt_footer-widgets">
-		
-    <div class="footer-widgets-column">
-    	<?php
+	function aster_photography_footer_widget() {
 		$aster_photography_footer_widget_column = get_theme_mod('aster_photography_footer_widget_column','4');
-	for ($i=1; $i<=$aster_photography_footer_widget_column; $i++) { ?>
-        <?php if ( is_active_sidebar( 'aster-photography-footer-widget-' .$i ) ) : ?>
-            <div class="footer-one-column" >
-                <?php dynamic_sidebar( 'aster-photography-footer-widget-'.$i); ?>
-            </div>
-        <?php endif; ?>
-        <?php  } ?>
-    </div>
 
-</div>
-	<?php 
-	endif; } 
-endif;
-add_action( 'aster_photography_footer_widget', 'aster_photography_footer_widget' );
+		$column_class = '';
+		if ($aster_photography_footer_widget_column == '1') {
+			$column_class = 'one-column';
+		} elseif ($aster_photography_footer_widget_column == '2') {
+			$column_class = 'two-columns';
+		} elseif ($aster_photography_footer_widget_column == '3') {
+			$column_class = 'three-columns';
+		} else {
+			$column_class = 'four-columns';
+		}
+	
+		if($aster_photography_footer_widget_column !== ''): 
+		?>
+		<div class="dt_footer-widgets <?php echo esc_attr($column_class); ?>">
+			<div class="footer-widgets-column">
+				<?php
+				for ($i = 1; $i <= $aster_photography_footer_widget_column; $i++) { 
+					if ( is_active_sidebar( 'travel-vacation-footer-widget-' .$i ) ) : ?>
+						<div class="footer-one-column">
+							<?php dynamic_sidebar( 'travel-vacation-footer-widget-'.$i); ?>
+						</div>
+					<?php endif; 
+				} ?>
+			</div>
+		</div>
+		<?php 
+		endif;
+	} 
+	endif;
+	add_action( 'aster_photography_footer_widget', 'aster_photography_footer_widget' );
 
 
 function aster_photography_footer_text_transform_css() {

@@ -126,3 +126,11 @@
         } );
     } );
 } )( jQuery );
+
+(function($) {
+    wp.customize('aster_photography_pagetitle_height', function(value) {
+        value.bind(function(newval) {
+            $('body').css('padding', newval + 'px');
+        });
+    });
+})(jQuery);

@@ -22,6 +22,9 @@ require get_template_directory() . '/theme-library/customizer/theme-options/typo
 // Excerpt.
 require get_template_directory() . '/theme-library/customizer/theme-options/excerpt.php';
 
+// Page Title.
+require get_template_directory() . '/theme-library/customizer/theme-options/page-title.php';
+
 // Sidebar Position.
 require get_template_directory() . '/theme-library/customizer/theme-options/sidebar-position.php';
 

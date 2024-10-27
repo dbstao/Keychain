@@ -259,7 +259,7 @@ function aster_photography_enqueue_selected_fonts() {
 add_action('wp_enqueue_scripts', 'aster_photography_enqueue_selected_fonts');
 
 function aster_photography_layout_customizer_css() {
-    $margin = get_theme_mod('aster_photography_layout_width_margin', 0);
+    $margin = get_theme_mod('aster_photography_layout_width_margin', 50);
     ?>
     <style type="text/css">
         body.site-boxed--layout #page  {
@@ -315,3 +315,81 @@ function aster_photography_sidebar_width_customizer_css() {
     <?php
 }
 add_action('wp_head', 'aster_photography_sidebar_width_customizer_css');
+
+if ( ! function_exists( 'aster_photography_get_page_title' ) ) {
+    function aster_photography_get_page_title() {
+        $title = '';
+
+		if (is_404()) {
+			echo 'Page Not Found';
+		} elseif (is_search()) {
+			echo 'Search Results for: ' . get_search_query() . '';
+		} elseif (is_home() && !is_front_page()) {
+			echo 'Blogs';
+		} elseif (function_exists('is_shop') && is_shop()) {
+			echo 'Shop';
+		} elseif (is_page_template('template-homepage.php')) {
+		} elseif (is_page()) {
+			the_title('', '');
+		} elseif (is_single()) {
+			the_title('', '');
+		} elseif (is_archive()) {
+			the_archive_title('', '');
+		} else {
+			the_archive_title('', '');
+		}
+        return apply_filters( 'aster_photography_page_title', $title );
+    }
+}
+
+if ( ! function_exists( 'aster_photography_has_page_header' ) ) {
+    function aster_photography_has_page_header() {
+        // Default to true (display header)
+        $return = true;
+
+        // Custom conditions for disabling the header
+        if ( 'hide-all-devices' == get_theme_mod( 'aster_photography_page_header_visibility', 'all-devices' ) ) {
+            $return = false;
+        }
+
+        // Apply filters and return
+        return apply_filters( 'aster_photography_display_page_header', $return );
+    }
+}
+
+if ( ! function_exists( 'aster_photography_page_header_style' ) ) {
+    function aster_photography_page_header_style() {
+        $style = get_theme_mod( 'aster_photography_page_header_style', 'default' );
+        return apply_filters( 'aster_photography_page_header_style', $style );
+    }
+}
+
+function aster_photography_page_title_customizer_css() {
+    $layout_option = get_theme_mod('aster_photography_page_header_layout', 'left');
+    ?>
+    <style type="text/css">
+        .asterthemes-wrapper.page-header-inner {
+            <?php if ($layout_option === 'flex') : ?>
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            <?php else : ?>
+                text-align: <?php echo esc_html($layout_option); ?>;
+            <?php endif; ?>
+        }
+    </style>
+    <?php
+}
+add_action('wp_head', 'aster_photography_page_title_customizer_css');
+
+function aster_photography_pagetitle_height_css() {
+    $height = get_theme_mod('aster_photography_pagetitle_height', 50);
+    ?>
+    <style type="text/css">
+        header.page-header{
+            padding:<?php echo esc_attr($height); ?>px 0px;
+        }
+    </style>
+    <?php
+}
+add_action('wp_head', 'aster_photography_pagetitle_height_css');

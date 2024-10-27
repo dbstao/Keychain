@@ -1,5 +1,9 @@
 .card.whizzie-wrap.loaded {
     height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .whizzie-menu .button-primary{
   width: 201px;

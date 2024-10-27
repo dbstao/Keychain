@@ -133,6 +133,45 @@ $wp_customize->add_control(
 	)
 );
 
+
+// ---------------------------------------- Post layout ----------------------------------------------------
+
+// Add Separator Custom Control
+$wp_customize->add_setting( 'aster_photography_archive_layuout_separator', array(
+	'sanitize_callback' => 'sanitize_text_field',
+) );
+
+$wp_customize->add_control( new Aster_Photography_Separator_Custom_Control( $wp_customize, 'aster_photography_archive_layuout_separator', array(
+	'label' => __( 'Archive/Blogs Layout Setting', 'aster-photography' ),
+	'section' => 'aster_photography_post_options',
+	'settings' => 'aster_photography_archive_layuout_separator',
+)));
+
+// Archive Layout - Column Layout.
+$wp_customize->add_setting(
+	'aster_photography_archive_column_layout',
+	array(
+		'default'           => 'column-1',
+		'sanitize_callback' => 'aster_photography_sanitize_select',
+	)
+);
+
+$wp_customize->add_control(
+	'aster_photography_archive_column_layout',
+	array(
+		// translators: %d is the post number
+		'label'   => esc_html__( 'Select Posts Layout', 'aster-photography' ),
+		'section' => 'aster_photography_post_options',
+		'type'    => 'select',
+		'choices' => array(
+			'column-1' => __( 'Column 1', 'aster-photography' ),
+			'column-2' => __( 'Column 2', 'aster-photography' ),
+			'column-3' => __( 'Column 3', 'aster-photography' ),
+			'column-4' => __( 'Column 4', 'aster-photography' ),
+		),
+	)
+);
+
 $wp_customize->add_setting('aster_photography_blog_layout_option_setting',array(
 	'default' => 'Left',
 	'sanitize_callback' => 'aster_photography_sanitize_choices'
@@ -146,3 +185,75 @@ $wp_customize->add_setting('aster_photography_blog_layout_option_setting',array(
 		'Default' => esc_url(get_template_directory_uri()).'/resource/img/layout-1.png',
 		'Right' => esc_url(get_template_directory_uri()).'/resource/img/layout-3.png',
 ))));
+
+
+// ---------------------------------------- Read More ----------------------------------------------------
+
+// Add Separator Custom Control
+$wp_customize->add_setting( 'aster_photography_readmore_separators', array(
+	'sanitize_callback' => 'sanitize_text_field',
+) );
+
+$wp_customize->add_control( new Aster_Photography_Separator_Custom_Control( $wp_customize, 'aster_photography_readmore_separators', array(
+	'label' => __( 'Read More Button Settings', 'aster-photography' ),
+	'section' => 'aster_photography_post_options',
+	'settings' => 'aster_photography_readmore_separators',
+)));
+
+
+// Post Options - Show / Hide Read More Button.
+$wp_customize->add_setting(
+	'aster_photography_post_readmore_button',
+	array(
+		'default'           => true,
+		'sanitize_callback' => 'aster_photography_sanitize_switch',
+	)
+);
+
+$wp_customize->add_control(
+	new Aster_Photography_Toggle_Switch_Custom_Control(
+		$wp_customize,
+		'aster_photography_post_readmore_button',
+		array(
+			'label'   => esc_html__( 'Show / Hide Read More Button', 'aster-photography' ),
+			'section' => 'aster_photography_post_options',
+		)
+	)
+);
+
+$wp_customize->add_setting(
+    'aster_photography_readmore_btn_icon',
+    array(
+        'default' => 'fas fa-chevron-right', // Set default icon here
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability' => 'edit_theme_options',
+    )
+);
+
+$wp_customize->add_control(new Aster_Photography_Change_Icon_Control(
+    $wp_customize, 
+    'aster_photography_readmore_btn_icon',
+    array(
+        'label'    => __('Read More Icon','aster-photography'),
+        'section'  => 'aster_photography_post_options',
+        'iconset'  => 'fa',
+    )
+));
+
+$wp_customize->add_setting(
+	'aster_photography_readmore_button_text',
+	array(
+		'default'           => 'Read More',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'aster_photography_readmore_button_text',
+	array(
+		'label'           => esc_html__( 'Read More Button Text', 'aster-photography' ),
+		'section'         => 'aster_photography_post_options',
+		'settings'        => 'aster_photography_readmore_button_text',
+		'type'            => 'text',
+	)
+);
