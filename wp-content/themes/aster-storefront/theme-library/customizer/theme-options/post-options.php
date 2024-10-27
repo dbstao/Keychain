@@ -134,6 +134,44 @@ $wp_customize->add_control(
 	)
 );
 
+
+// ---------------------------------------- Post layout ----------------------------------------------------
+
+// Add Separator Custom Control
+$wp_customize->add_setting( 'aster_storefront_archive_layuout_separator', array(
+	'sanitize_callback' => 'sanitize_text_field',
+) );
+
+$wp_customize->add_control( new Aster_Storefront_Separator_Custom_Control( $wp_customize, 'aster_storefront_archive_layuout_separator', array(
+	'label' => __( 'Archive/Blogs Layout Setting', 'aster-storefront' ),
+	'section' => 'aster_storefront_post_options',
+	'settings' => 'aster_storefront_archive_layuout_separator',
+)));
+
+// Archive Layout - Column Layout.
+$wp_customize->add_setting(
+	'aster_storefront_archive_column_layout',
+	array(
+		'default'           => 'column-1',
+		'sanitize_callback' => 'aster_storefront_sanitize_select',
+	)
+);
+
+$wp_customize->add_control(
+	'aster_storefront_archive_column_layout',
+	array(
+		'label'   => esc_html__( 'Select Posts Layout', 'aster-storefront' ),
+		'section' => 'aster_storefront_post_options',
+		'type'    => 'select',
+		'choices' => array(
+			'column-1' => __( 'Column 1', 'aster-storefront' ),
+			'column-2' => __( 'Column 2', 'aster-storefront' ),
+			'column-3' => __( 'Column 3', 'aster-storefront' ),
+			'column-4' => __( 'Column 4', 'aster-storefront' ),
+		),
+	)
+);
+
 $wp_customize->add_setting('aster_storefront_blog_layout_option_setting',array(
 	'default' => 'Left',
 	'sanitize_callback' => 'aster_storefront_sanitize_choices'
@@ -147,3 +185,75 @@ $wp_customize->add_setting('aster_storefront_blog_layout_option_setting',array(
 		'Default' => esc_url(get_template_directory_uri()).'/resource/img/layout-1.png',
 		'Right' => esc_url(get_template_directory_uri()).'/resource/img/layout-3.png',
 ))));
+
+
+// ---------------------------------------- Read More ----------------------------------------------------
+
+// Add Separator Custom Control
+$wp_customize->add_setting( 'aster_storefront_readmore_separators', array(
+	'sanitize_callback' => 'sanitize_text_field',
+) );
+
+$wp_customize->add_control( new Aster_Storefront_Separator_Custom_Control( $wp_customize, 'aster_storefront_readmore_separators', array(
+	'label' => __( 'Read More Button Settings', 'aster-storefront' ),
+	'section' => 'aster_storefront_post_options',
+	'settings' => 'aster_storefront_readmore_separators',
+)));
+
+
+// Post Options - Show / Hide Read More Button.
+$wp_customize->add_setting(
+	'aster_storefront_post_readmore_button',
+	array(
+		'default'           => true,
+		'sanitize_callback' => 'aster_storefront_sanitize_switch',
+	)
+);
+
+$wp_customize->add_control(
+	new Aster_Storefront_Toggle_Switch_Custom_Control(
+		$wp_customize,
+		'aster_storefront_post_readmore_button',
+		array(
+			'label'   => esc_html__( 'Show / Hide Read More Button', 'aster-storefront' ),
+			'section' => 'aster_storefront_post_options',
+		)
+	)
+);
+
+$wp_customize->add_setting(
+    'aster_storefront_readmore_btn_icon',
+    array(
+        'default' => 'fas fa-chevron-right', // Set default icon here
+        'sanitize_callback' => 'sanitize_text_field',
+        'capability' => 'edit_theme_options',
+    )
+);
+
+$wp_customize->add_control(new Aster_Storefront_Change_Icon_Control(
+    $wp_customize, 
+    'aster_storefront_readmore_btn_icon',
+    array(
+        'label'    => __('Read More Icon','aster-storefront'),
+        'section'  => 'aster_storefront_post_options',
+        'iconset'  => 'fa',
+    )
+));
+
+$wp_customize->add_setting(
+	'aster_storefront_readmore_button_text',
+	array(
+		'default'           => 'Read More',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'aster_storefront_readmore_button_text',
+	array(
+		'label'           => esc_html__( 'Read More Button Text', 'aster-storefront' ),
+		'section'         => 'aster_storefront_post_options',
+		'settings'        => 'aster_storefront_readmore_button_text',
+		'type'            => 'text',
+	)
+);

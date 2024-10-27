@@ -49,7 +49,7 @@ add_action( 'customize_controls_enqueue_scripts', 'aster_storefront_icon_customi
 
 if(!function_exists('Aster_Storefront_Change_Icon_Control_array')){
     function Aster_Storefront_Change_Icon_Control_array(){
-        return array("", 
+        return array(
         "fab fa-500px",
         "fab fa-accessible-icon",
         "fab fa-accusoft",

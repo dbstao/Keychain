@@ -4,7 +4,7 @@ Theme URI: https://asterthemes.com/products/free-storefront-wordpress-theme
 Author: asterthemes
 Author URI: https://asterthemes.com
 Description: Aster Storefront is a pre-built website template designed especially for online stores and e-commerce websites. People who want to start an online shop to sell their products to a wider audience can use this theme to create and launch their websites quickly and easily. Creating and launching a website using this theme is easy as you don’t require any web development or coding background. It also comes with professional support in case you get stuck anywhere while creating your website. It also comes with all the necessary features and functionalities needed to set up an online store. The theme is best for Retail, E-commerce, Fashion, Boutique, Electronics, Lifestyle, Home Goods, Accessories, Gadgets, Gifts, Apparel, Online Store, Merchandise, Consumer Goods, Shopping. The design of this theme is geared towards creating a user-friendly and visually appealing website to help the website owners get more crowd to their online store. It comes with a homepage that helps in showcasing features, products, categories, and promotional offers. It also comes with a product page that displays detailed information about the product, like images, price, and specifications. An important feature that comes with this theme is its compatibility with the popular e-commerce plugin WooCommerce. WooCommerce allows website owners to turn their websites into online stores. It also helps in managing the online store, adding products, setting up payment getaways, and managing orders. Furthermore, the theme is fully responsive, cross-browser compatible, and user-friendly. These features allow the website to be accessible through any device and web browser no matter what the size or resolution of the device is. It is also fully customizable and comes with various customization options, allowing website owners to modify the theme’s design to suit their brand’s needs.
-Version: 3.2
+Version: 3.3
 Tested up to: 6.4
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
@@ -2266,6 +2266,16 @@ textarea {
 	}
 }
 
+.menu-primary-menu-container, .menu {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+	.menu-primary-menu-container, .menu {
+		text-align: left;
+	}
+}
+
 @media screen and (min-width: 1100px) {
 	.main-navigation ul:not(.sub-menu):not(.children) {
 		display: flex;
@@ -2998,7 +3008,7 @@ h5.entry-title.mag-post-title {
 }
 .sticky .mag-post-single {
     position: relative;
-	z-index: 999;
+	z-index: 0;
 }
 
 .right-sidebar .asterthemes-wrapper .asterthemes-page {
@@ -7386,6 +7396,7 @@ table.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block {
 	nav.wp-calendar-nav span a{
 		color: var(--primary-color) !important;
 	}
+	
 	/* Read More CSS */
 
 	.read-more-button {
@@ -7394,22 +7405,56 @@ table.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block {
 		padding: 10px 20px;
 		margin-top: 10px;
 		background-color: #000;
-		color: var(--primary-color) !important;
+		color: #ffffff !important;
 		text-decoration: none;
 		border-radius: 5px;
 		font-size: 16px;
+		transition: all 0.5s ease;
 	}
 	
 	.read-more-button .dashicons {
 		margin-left: 8px;
 		font-size: 20px;
+		transition: transform 0.5s ease;
 	}
 	
 	.read-more-button:hover {
 		background-color: var(--primary-color);
-		color: #fff !important;
 		cursor: pointer;
 	}
+	
+	.mag-post-read-more a {
+		transition: all 0.5s ease;
+	}
+	
+	.mag-post-read-more i {
+		padding-left: 10px;
+		transition: transform 0.5s ease;
+	}
+	
+	.read-more-button:hover .dashicons, .read-more-button:hover i {
+		transform: translateX(8px);
+	}
+
+	.mag-post-read-more a {
+		position: relative;
+	}
+	
+	.read-more-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100em;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.1);
+		transition: left 0.5s ease;
+	}
+	
+	.read-more-button:hover::before {
+		left: 0;
+	}
+
 	div#content {
 		margin-top: 3em;
 	}
@@ -7651,4 +7696,63 @@ body.home .star-rating {
 .tab-product figure img {
     width: 100%;
     height: 100%;
+}
+
+/* ARCHIVE LAYOUT */
+
+.aster_storefront-archive-layout {
+	margin-bottom: 30px;
+}
+
+.aster_storefront-archive-layout.grid-layout {
+	display: grid;
+	grid-gap: 30px;
+}
+
+.aster_storefront-archive-layout.grid-layout article {
+	margin-bottom: 0;
+}
+
+.aster_storefront-archive-layout.grid-layout.column-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.aster_storefront-archive-layout.grid-layout.column-3 {
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.aster_storefront-archive-layout.grid-layout.column-4 {
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+
+.aster_storefront-archive-layout.grid-layout.column-4 .mag-post-single{
+	padding: 15px;
+}
+
+.aster_storefront-archive-layout.grid-layout.column-3 .read-more-button {
+	padding: 10px 10px;
+}
+
+.aster_storefront-archive-layout.grid-layout.column-4 .read-more-button {
+	padding: 10px 15px;
+}
+
+@media (max-width: 991px) {
+	.aster_storefront-archive-layout.grid-layout.column-4 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.aster_storefront-archive-layout.grid-layout.column-4, .aster_storefront-archive-layout.grid-layout.column-3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.aster_storefront-archive-layout.grid-layout.column-4,.aster_storefront-archive-layout.grid-layout.column-2,.aster_storefront-archive-layout.grid-layout.column-3 {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

@@ -10,11 +10,11 @@
 
 get_header();
 
-$aster_storefront_column = get_theme_mod( 'aster_storefront_archive_column_layout', 'column-3' );
+$aster_storefront_column = get_theme_mod( 'aster_storefront_archive_column_layout', 'column-1' );
 ?>
 <main id="primary" class="site-main">
 	<?php if ( have_posts() ) : ?>
-		<div class="aster-storefront-archive-layout grid-layout <?php echo esc_attr( $aster_storefront_column ); ?>">
+		<div class="aster_storefront-archive-layout grid-layout <?php echo esc_attr( $aster_storefront_column ); ?>">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();

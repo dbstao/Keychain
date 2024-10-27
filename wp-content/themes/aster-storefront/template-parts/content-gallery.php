@@ -7,6 +7,8 @@
  * @package aster_storefront
  */
 ?>
+<?php $aster_storefront_readmore = get_theme_mod( 'aster_storefront_readmore_button_text','Read More');?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="mag-post-single">
         <?php
@@ -43,12 +45,14 @@
 					<?php the_excerpt(); ?>
 				</div>
 		    <?php } ?>
-			<div class="mag-post-read-more">
-				<a href="<?php the_permalink(); ?>" class="read-more-button">
-					<?php esc_html_e( 'Read More', 'aster-storefront' ); ?>
-					<span class="dashicons dashicons-arrow-right"></span>
-				</a>
-			</div>
+			<?php if ( get_theme_mod( 'aster_storefront_post_readmore_button', true ) === true ) : ?>
+				<div class="mag-post-read-more">
+					<a href="<?php the_permalink(); ?>" class="read-more-button">
+						<?php if ( ! empty( $aster_storefront_readmore ) ) { ?> <?php echo esc_html( $aster_storefront_readmore ); ?> <?php } ?>
+						<i class="<?php echo esc_attr( get_theme_mod( 'aster_storefront_readmore_btn_icon', 'fas fa-chevron-right' ) ); ?>"></i>
+					</a>
+				</div>
+			<?php endif; ?>
 		</div>
 	</div>
 

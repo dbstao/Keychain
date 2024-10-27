@@ -4,7 +4,7 @@ Contributors: asterthemes
 Tags: one-column, two-columns, grid-layout, custom-background, custom-logo, custom-colors, custom-header, custom-menu, flexible-header, featured-images, threaded-comments, translation-ready, theme-options, sticky-post, footer-widgets, full-width-template, left-sidebar, right-sidebar, e-commerce, blog, portfolio, post-formats
 Requires at least: 5.0
 Tested up to: 6.4
-Stable tag: 3.2
+Stable tag: 3.3
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -175,6 +175,13 @@ Yes, the theme is integrated to work with following plugins:
 * Updated Theme Discription.
 * Added Demo Import.
 
+= 3.3 =
+* Added Post layout Settings.
+* Added Read More Button Settings.
+* Updated read more button CSS and added hover effects.
+* Added Page Title Height setting.
+* Updated Google Fonts Library.
+
 
 == Images Screenshot ==
 
@@ -206,3 +213,4 @@ https://pxhere.com/en/photo/1236222
 * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com, License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 * Google Fonts: https://fonts.google.com/, License: Apache License, version 2.0
 * Web Fonts: https://opensource.org/licenses/MIT
+* TGM, Author: GaryJones, Source: https://github.com/TGMPA/TGM-Plugin-Activation/blob/develop/LICENSE.md ,License: GNU General Public License v2.0

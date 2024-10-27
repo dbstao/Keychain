@@ -374,3 +374,15 @@ function aster_storefront_page_title_customizer_css() {
     <?php
 }
 add_action('wp_head', 'aster_storefront_page_title_customizer_css');
+
+function aster_storefront_pagetitle_height_css() {
+    $height = get_theme_mod('aster_storefront_pagetitle_height', 50);
+    ?>
+    <style type="text/css">
+        header.page-header{
+            padding:<?php echo esc_attr($height); ?>px 0px;
+        }
+    </style>
+    <?php
+}
+add_action('wp_head', 'aster_storefront_pagetitle_height_css');

@@ -1,7 +1,7 @@
 === Bakery Elementor ===
 Contributors: wpelemento
 Requires at least: 5.0
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 Requires PHP: 5.6
 Tested up to: 6.6
 License: GPLv3.0 or later
@@ -81,6 +81,12 @@ License URI : https://pxhere.com/en/license, CC0
 Source 		: https://pxhere.com/en/photo/549150
 
 == Changelog ==
+
+= October-25-2024 :: 0.0.3
+
+* Added enable / disable footer widget option.
+* Added enable / disable footer copyright option.
+* Updated woocommerce.
 
 = October-5-2024 :: 0.0.2
 

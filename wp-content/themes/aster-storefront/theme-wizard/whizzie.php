@@ -16,6 +16,9 @@ class Whizzie {
 	protected $page_title = '';
 	protected $config_steps = array();
 
+	public $plugin_path;
+	public $parent_slug;
+	
 	/**
 	 * Relative plugin url for this plugin folder
 	 * @since 1.0.0

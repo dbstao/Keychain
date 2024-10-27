@@ -116,6 +116,22 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'aster_
     'section' => 'aster_storefront_page_title_options',
 )));
 
+$wp_customize->add_setting('aster_storefront_pagetitle_height', array(
+    'default'           => 50,
+    'sanitize_callback' => 'aster_storefront_sanitize_range_value',
+));
+
+$wp_customize->add_control(new Aster_Storefront_Customize_Range_Control($wp_customize, 'aster_storefront_pagetitle_height', array(
+    'label'       => __('Set Height', 'aster-storefront'),
+    'description' => __('This setting controls the page title height when no background image is set. If a background image is set, this setting will not apply.', 'aster-storefront'),
+    'section'     => 'aster_storefront_page_title_options',
+    'settings'    => 'aster_storefront_pagetitle_height',
+    'input_attrs' => array(
+        'min'  => 0,
+        'max'  => 300,
+        'step' => 5,
+    ),
+)));
 
 $wp_customize->add_setting( 'aster_storefront_page_title_style_separator', array(
 	'sanitize_callback' => 'sanitize_text_field',
