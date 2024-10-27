@@ -172,7 +172,7 @@ function best_shop_product_search(){
               <input type="hidden" name="post_type" value="product" />
               <input class="header-search-input" name="s" type="text" placeholder="<?php echo esc_attr(best_shop_get_setting('woo_search_text')); ?>"/>
               <select class="header-search-select" name="product_cat">
-                  <option value=""><?php echo esc_attr(best_shop_get_setting('woo_search_dropdown_title')); ?></option> 
+                  <option value=""><?php echo esc_html(best_shop_get_setting('woo_search_dropdown_title')); ?></option> 
                   <?php
                   $categories = get_categories('taxonomy=product_cat');
                   foreach ($categories as $category) {

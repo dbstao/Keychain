@@ -897,35 +897,35 @@ global $pagenow;
   
 
 
-if($pagenow == 'index.php' || $pagenow == 'themes.php'){
-    
-    if ( isset( $_GET['hide_admin_notice'] ) ) {
-          update_option('best_shop_hide_admin_notice', 'ju4-dismiss-notice');
-    } else {
+  if($pagenow == 'index.php' || $pagenow == 'themes.php'){
 
-        $best_shop_notice = get_option('best_shop_hide_admin_notice', '');
-        if ($best_shop_notice != 'ju4-dismiss-notice' || $best_shop_notice == '') {	
-           add_action( 'admin_notices', 'best_shop_admin_notice_info' );
-        }
-    }
-}
+      if ( isset( $_GET['hide_admin_notice'] ) ) {
+            update_option('best_shop_hide_admin_notice', 'oct4-dismiss-notice');
+      } else {
 
-function best_shop_admin_notice_info() {
-    
-  $class = 'notice notice-info is-dismissible';
-  $message = __( 'Customize page Header: Edit page >Header style, More Options goto customizer >Theme Options. Theme custom widgets are starting + sign.', 'best-shop' );
-  $dismiss = __( 'Dismiss', 'best-shop');
-  $tutorial = __( 'How to build my site ? / Upgrade to PRO', 'best-shop');
-  if (function_exists('best_shop_pro_textdomain')){
-      $tutorial = __( 'Theme Tutorials', 'best-shop');
+          $best_shop_notice = get_option('best_shop_hide_admin_notice', '');
+          if ($best_shop_notice != 'oct4-dismiss-notice' || $best_shop_notice == '') {	
+             add_action( 'admin_notices', 'best_shop_admin_notice_info' );
+          }
+      }
   }
-  printf( '<div class="%1$s"> <p> 
 
-  <a class="best-shop-btn-get-started button button-primary best-shop-button-padding" href="#" data-name="" data-slug="" >'.esc_html__("Install Demos","best-shop").'</a>	
-  <a class="button button-primary best-shop-button-padding" target="_blank" href="'.esc_url( "https://www.gradientthemes.com/product/wordpress-shopping-cart-theme/" ).'" ><b>'.$tutorial.'</b></a>
-  <span>%2$s</span>&nbsp;&nbsp; <em><a href="?hide_admin_notice" target="_self"  class="dismiss-notice">%3$s</a></em> </p></div>', esc_attr( $class ), esc_html( $message ), esc_html( $dismiss ) ); 
+  function best_shop_admin_notice_info() {
 
-}
+    $class = 'notice notice-info is-dismissible';
+    $message = __( 'Customize page Header: Edit page >Header style, More Options goto customizer >Theme Options. Theme custom widgets are starting + sign.', 'best-shop' );
+    $dismiss = __( 'Dismiss', 'best-shop');
+    $tutorial = __( 'How to build my site ? / Upgrade to PRO', 'best-shop');
+    if (function_exists('best_shop_pro_textdomain')){
+        $tutorial = __( 'Theme Tutorials', 'best-shop');
+    }
+    printf( '<div class="%1$s"> <p> 
+
+    <a class="best-shop-btn-get-started button button-primary best-shop-button-padding" href="#" data-name="" data-slug="" >'.esc_html__("Install Demos","best-shop").'</a>	
+    <a class="button button-primary best-shop-button-padding" target="_blank" href="'.esc_url( "https://www.gradientthemes.com/product/wordpress-shopping-cart-theme/" ).'" ><b>'.$tutorial.'</b></a>
+    <span>%2$s</span>&nbsp;&nbsp; <em><a href="?hide_admin_notice" target="_self"  class="dismiss-notice">%3$s</a></em> </p></div>', esc_attr( $class ), esc_html( $message ), esc_html( $dismiss ) ); 
+
+  }
 
 
 add_action( 'admin_enqueue_scripts', 'best_shop_load_admin_style' );
