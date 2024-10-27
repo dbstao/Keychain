@@ -1,0 +1,103 @@
+/*
+Theme Name: Nivritti
+Theme URI: https://wpkoi.com/nivritti-wpkoi-wordpress-theme/
+Template: martanda
+Author: wpkoithemes
+Author URI: https://wpkoi.com
+Description: Nivritti, a dynamic child theme derived from the Martanda WPKoi theme, offers a contemporary, colorful design for unique portfolio, business or agency websites. It's a versatile multipurpose theme ideal for showcasing your art, business, event, portfolio, blog, webshop, or products. Nivritti seamlessly integrates the power of Elementor's drag-and-drop page builder, WooCommerce shop module, and Contact Form 7 for effective content management. The premium demo leverages the Nivritti premium plugin for added features. With an intuitive admin panel, extensive customizer options, and block-based template parts, Nivritti empowers you to build your dream website without any coding expertise. This responsive theme ensures a flawless display on various devices, enhancing user experience. Craft your online presence with Nivritti and share it with the world. Comprehensive installation and styling guidance is available in our documentation at wpkoi.com/docs.
+Requires at least: 6.1
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: nivritti
+Tags: one-column, blog, e-commerce, flexible-header, full-width-template, custom-background, custom-colors, sticky-post, translation-ready, featured-images, editor-style
+
+*/
+.nivritti-title-holder h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+    padding: 5px 10px;
+}
+.site-info {
+    padding: 1vw 4vw;
+}
+.site-header .wp-block-site-title {
+    line-height: var(--martanda--site-title-font-size);
+}
+.site-info {
+    text-align: left;
+}
+.martanda-side-left-text-content {
+    white-space: nowrap;
+}
+.wpkoi-elements-adv-accordion .wpkoi-elements-accordion-list .wpkoi-elements-accordion-header {
+    text-align: center;
+    display: block;
+}
+.wpkoi-elements-adv-accordion .wpkoi-elements-accordion-list .wpkoi-elements-accordion-content {
+    text-align: center;
+}
+.wp-block-separator.has-background.footer-separator {
+    height: 3px;
+}
+.wp-block-navigation .has-child:not(.open-on-click):hover>.wp-block-navigation__submenu-container {
+    min-width: 220px;
+}
+table, td, th {
+    border-color: rgba(255,255,255,.2) !important;
+}
+.wp-block-social-links.is-style-pill-shape .wp-social-link a {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+.overflow-hidden {
+    overflow: hidden !important;
+}
+#content .elementor-toggle a {
+    text-decoration: inherit;
+}
+.site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li a, .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content .block-editor-block-list__block a {
+    background-color: var(--martanda--navigation-background-color);
+    color: var(--martanda--navigation-text-color);
+    font-family: var(--martanda--font-navigation);
+    font-weight: var(--martanda--navigation-font-weight);
+    text-transform: var(--martanda--navigation-font-transform);
+    font-size: var(--martanda--navigation-font-size);
+}
+.site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li a:hover, .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content .block-editor-block-list__block a:hover {
+    background-color: var(--martanda--navigation-background-hover-color);
+    color: var(--martanda--navigation-text-hover-color);
+}
+.site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li.current-menu-item a, .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content .block-editor-block-list__block.current-menu-item a {
+    background-color: var(--martanda--navigation-background-current-color);
+    color: var(--martanda--navigation-text-current_color);
+}
+@media (min-width: 601px) {
+    .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li a {
+        background-color: var(--martanda--nivritti-color-1);
+        border: 2px solid;
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+    .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(2) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(5) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(8) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(11) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(14) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(17) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(20) a {
+        background-color: var(--martanda--nivritti-color-2);
+    }
+    .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(3) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(6) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(9) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(12) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(15) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(18) a, .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__responsive-container-content li:nth-child(21) a {
+        background-color: var(--martanda--nivritti-color-3);
+    }
+    .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__container ul li a {
+        background-color: var(--martanda--subnavigation-background-color) !important;
+        border: inherit;
+        border-radius: 0;
+    }
+    .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__container ul li a:hover {
+        background-color: var(--martanda--subnavigation-background-hover-color) !important;
+    }
+    .nivritti-nav-bg .site-header .wp-block-navigation .wp-block-navigation__container ul li.current-menu-item a {
+        background-color: var(--martanda--subnavigation-background-current-color) !important;
+    }
+}

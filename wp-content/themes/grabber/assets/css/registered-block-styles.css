@@ -1,0 +1,260 @@
+/*
+ * CSS for registered block styles.
+ * See inc/register-block-styles.php.
+ */
+
+/* Flat button */
+.is-style-grabber-flat-button .wp-block-button__link,
+.is-style-grabber-flat-button .wp-block-button__link:hover,
+.is-style-grabber-flat-button .wp-block-button__link:focus,
+.is-style-grabber-flat-button .wp-block-button__link:active,
+.is-style-grabber-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Box shadow */
+.is-style-grabber-box-shadow {
+	box-shadow: var(--wp--preset--shadow--natural);
+}
+
+/* Lists */
+.is-style-grabber-list-underline li {
+	border-bottom: 1px solid currentcolor;
+}
+
+.is-style-grabber-list-underline ul {
+	border-top: 1px solid currentcolor;
+}
+
+.is-style-grabber-list-underline ul li {
+	border: none;
+}
+
+details.is-style-grabber-plus > summary {
+	list-style-type: "+ ";
+}
+
+details[open].is-style-grabber-plus > summary {
+	list-style-type: "- ";
+}
+
+details.is-style-grabber-plus > summary::marker {
+	font-weight: 700;
+	font-size: 1em;
+	font-family: var(--wp--preset--font-family--monospace);
+}
+.block-editor-block-list__layout .grabber-swiper-holder.swiper-wrapper {
+	display: inline-block !important;
+  }
+  
+  .block-editor-block-list__layout .grabber-swiper-holder.swiper-wrapper li {
+	display: none;
+  }
+  .block-editor-block-list__layout .grabber-swiper-holder.swiper-wrapper li:first-child {
+	display: block;
+  }
+  
+  .block-editor-block-list__block.wp-block.wp-block-group.grabber-hticker-controls .wp-block.wp-block-html {
+	display: none;
+  }
+  
+  .block-editor-block-list__block.wp-block.wp-block-group.grabber-slider-controls .wp-block.wp-block-html.is-selected,
+  .block-editor-block-list__block.wp-block.wp-block-group.grabber-hticker-controls .wp-block.wp-block-html.is-selected {
+	display: block;
+  }
+  .block-editor-block-list__block.wp-block-group.grabber-hticker-controls {
+	display: inline-flex;
+	position: inherit;
+	left: auto;
+	width: auto;
+	height: auto;
+	top: auto;
+  }
+  .is-style-grabber-button-styleone  {
+	border: none;
+	display: block;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+  
+  .is-style-grabber-button-styleone span {
+	position: relative; 
+	z-index: 1;
+  }
+  .is-style-grabber-button-styleone:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 490%;
+	width: 140%;
+	opacity: 0.5;
+	background: #78c7d2;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .is-style-grabber-button-styleone:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+/***Button two**/
+  .is-style-grabber-button-styletwo {
+	transition: all 0.3s;
+	position: relative;
+}
+.is-style-grabber-button-styletwo  span {
+	transition: all 0.3s;
+}
+.is-style-grabber-button-styletwo ::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.is-style-grabber-button-styletwo :hover span {
+	letter-spacing: 2px;
+}
+.is-style-grabber-button-styletwo :hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.is-style-grabber-button-styletwo ::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.is-style-grabber-button-styletwo :hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+.is-style-grabber-button-styletwo .wp-element-button:hover {
+    border-color: transparent;
+    box-shadow: none;
+}
+.is-style-grabber-button-styletwo .wp-element-button {
+    background: transparent;
+    box-shadow: none;
+}
+/***button three***/
+
+.is-style-grabber-button-stylethree {
+	outline: none;
+	border: none;
+	border-radius:5px;
+  }
+  
+  .is-style-grabber-button-stylethree:active {
+	box-shadow: 0 5px #95a5a6;
+	transform: translateY(4px);
+  }
+
+/****Button Rounded***/
+.is-style-grabber-button-styleround .wp-element-button {
+    border-radius: 9999px;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    box-shadow: 0px 32px 40px 0px rgba(1, 55, 162, 0.24);
+    border-width: 1px;
+}
+.is-style-grabber-button-styleround .wp-element-button:hover{
+	background-color: transparent;
+    color: var(--wp--preset--color--primary);
+    box-shadow: none;
+    border-width: 1px;
+}
+
+/****list Style***/
+.is-style-grabber-list-plane {
+    list-style: none;
+    padding: 0;
+}
+.is-style-grabber-list-plane a {
+    text-decoration: none;
+}
+.is-style-grabber-list-left-border {
+    list-style: none;
+    padding: 0;
+}
+.is-style-grabber-list-left-border li {
+    border-left: 4px solid #2196F3;
+    padding-left: 5px;
+    margin-bottom: 3px;
+}
+
+.is-style-grabber-list-check{
+    list-style: none;
+    padding: 0;
+}
+.is-style-grabber-list-check li::before {
+    content: "";
+       display: inline-block;
+       width: 16px;
+       height: 16px;
+       background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>') no-repeat center center;
+       background-size: contain;
+       padding-right: 6px; 
+   }
+
+.is-style-grabber-list-check li {
+    display: flex;
+    vertical-align: middle;
+    position: relative;
+    align-items: center;
+}
+.headersearch button {
+    background-color: transparent;
+    padding: 2px;
+}
+.headersearch .wp-block-search__button svg,
+.headersearch button svg.search-icon {
+    fill: black;
+}
+.wp-block-heading.grabber-section-header {
+	border-radius: 3px;
+}
+.wp-block-cover.grabber-post-cover {
+	transition: all ease 0.65s;
+	}
+	.wp-block-cover.grabber-post-cover:hover img.wp-post-image {
+	transform: scale(1.25);
+	}
+	.taxonomy-category.is-style-categories-background-with-round a {
+	padding: 1px 5px;
+	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
+	background-color: var(--wp--preset--color--primary);
+	text-decoration: none;
+	color: #ffffff;
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+.wp-block-image.middle img{
+    vertical-align: middle;
+}

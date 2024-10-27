@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Magenta",
+  "version": 2,
+  "settings": {
+    "color": {
+        "palette": [
+            {
+                "color": "#FFFFFF",
+                "name": "Base",
+                "slug": "base"
+            },
+            {
+                "color": "#4D1837",
+                "name": "Primary",
+                "slug": "primary"
+            },
+            {
+                "color": "#A78D9D",
+                "name": "Secondary",
+                "slug": "secondary"
+            },
+            {
+                "color": "#ECD0E1",
+                "name": "Primary Light",
+                "slug": "primary-light"
+            },
+            {
+                "color": "#4C4C4C",
+                "name": "Body Text",
+                "slug": "body-text"
+            },
+            {
+                "color": "#1B1C1E",
+                "name": "Headings",
+                "slug": "heading"
+            },
+            {
+                "color": "#f9f9f9",
+                "name": "Section Background",
+                "slug": "section-bg"
+            },
+            {
+                "color": "#FFFFFF",
+                "name": "Background",
+                "slug": "background"
+            },
+            {
+                "color": "#000000",
+                "name": "Foreground",
+                "slug": "foreground"
+            },
+            {
+                "color":"#1B1C1E",
+                "name": "Footer Bg",
+                "slug": "footer-Bg"
+            },
+            {
+                "color":"#DFDFDF",
+                "name": "Border Color",
+                "slug": "border-color"
+            },
+            {
+                "color":"#A7AAAD",
+                "name": "Sidebar Shadow Color",
+                "slug": "sidebar shadow color"
+            }
+        ]
+    }
+  }
+}

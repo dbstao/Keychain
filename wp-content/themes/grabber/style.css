@@ -1,0 +1,193 @@
+/*
+Theme Name: Grabber
+Author: sandy786
+Author URI: https://www.insertcart.com/
+Theme URI: https://www.insertcart.com/grabber-theme-docs/
+Tags: full-site-editing, editor-style, block-styles, block-patterns, e-commerce
+Text Domain: grabber
+Description: Grabber is a sleek and modern WordPress theme designed for Full Site Editing (FSE). It's optimized for speed and performance, ensuring your website loads quickly and efficiently. With its pre-built block patterns, you can easily create stunning layouts and customize your site's design without writing a single line of code. Grabber is also mobile-friendly, SEO-optimized, and translation-ready, making it a versatile choice for businesses of all sizes.
+Requires at least: 6.3
+Requires PHP: 7.4
+Tested up to: 6.3
+Version: 1.3.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Styles intended only for the front.*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+.grabber-swiper-holder li {
+	margin-block-start: 0 !important;
+  }
+  .wp-block-query.grabber-ticker,
+  .wp-block-query.grabber-slider {
+	overflow: hidden;
+  }
+  @keyframes grabberPulse {
+	0% {
+	  -webkit-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+	50% {
+	  -webkit-transform: scale(0.8);
+	  transform: scale(0.8);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+	  transform: scale(1);
+	}
+  }
+  
+  news-ticker-holderv.ticker-2 .swiper-button-prev,
+  .news-ticker-holderv.ticker-2 .swiper-button-next {
+	top: -45px !important;
+	width: 40px;
+	height: 40px;
+	z-index: 555;
+	font-size: 16px;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-prev:after,
+  .news-ticker-holderv.ticker-2 .swiper-button-next:after {
+	font-size: 14px !important;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-prev {
+	right: 43px !important;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-next:hover,
+  .news-ticker-holderv.ticker-2 .swiper-button-prev:hover {
+	background-color: var(--wp--preset--color--primary) !important;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-prev:after,
+  .news-ticker-holderv.ticker-2 .swiper-button-next:after {
+	color: var(--wp--preset--color--primary) !important;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-prev:hover:after,
+  .news-ticker-holderv.ticker-2 .swiper-button-next:hover:after {
+	color: var(--wp--preset--color--light-color) !important;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-prev:after,
+  .news-ticker-holderv.ticker-2 .swiper-button-next:after {
+	font-size: 14px !important;
+  }
+  .news-ticker-holderv.ticker-2 .swiper-button-prev {
+	right: 43px !important;
+  }
+  .wp-block-group.grabber-hticker-controls {
+	display: inline-block;
+	position: absolute;
+	left: -30px;
+	width: 70px;
+	height: 30px;
+	top: -15px;
+  }
+  .wp-block-group.grabber-header-ticker {
+	position: relative;
+  }
+  .wp-block-group.grabber-hticker-controls .swiper-button-prev.grabber-ticker-prev,
+  .wp-block-group.grabber-hticker-controls .swiper-button-next.grabber-ticker-next {
+	position: relative;
+	display: inline-block;
+  }
+  .wp-block-group.grabber-hticker-controls .swiper-button-prev.grabber-ticker-prev {
+	margin-right: 10px !important;
+  }
+  .wp-block-group.grabber-hticker-controls .swiper-button-prev.grabber-ticker-prev:after,
+  .wp-block-group.grabber-hticker-controls .swiper-button-next.grabber-ticker-next:after {
+	font-size: 12px !important;
+	color: var(--wp--preset--color--light-color) !important;
+  }
+  .wp-block-group.grabber-hticker-controls .swiper-button-prev.grabber-ticker-prev:hover:after,
+  .wp-block-group.grabber-hticker-controls .swiper-button-next.grabber-ticker-next:hover:after {
+	color: var(--wp--preset--color--primary) !important;
+  }
+  .nomargin-column {
+	  margin-bottom: 0 !important;
+  }
+  .nopadding-bg,
+  ul.wp-block-navigation__container .has-background,
+  ul.wp-block-navigation__container.has-background {
+	  padding: 0;
+  }
+  .nounderline a {
+	  text-decoration: none;
+  }
+  .wp-block-navigation.has-background .has-child .wp-block-navigation__submenu-container{
+	  box-shadow: -1px 3px 7px 0px #b5c1d5;
+	  border-radius: 5px;
+  }
+  .wp-block-navigation .wp-block-navigation-item__label:hover {
+	  text-shadow: 0 0 0px black;
+  }
+  pre{
+	  display: block;
+	  box-sizing: border-box;
+	  width: 100%;
+	  border: 1px solid #d3d3d3;
+	  font-size: .9rem;
+	  color: #2c2828;
+	  border-radius: 5px;
+	  transition: box-shadow .5s, border-color .25s ease-in-out;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+		  background: rgb(242, 242, 242);
+	  margin: 10px 0px 10px 0px;
+	  line-height: 1.6;
+	  max-width: 100%;
+	  overflow: auto;
+	  padding: 1.4em;
+  }
+  .taxonomy-product_tag.wp-block-post-terms span.wp-block-post-terms__prefix,
+  .taxonomy-product_cat.wp-block-post-terms span.wp-block-post-terms__prefix {
+	  display: block;
+	  font-size: 14px;
+	  font-weight: bold;
+	  color: #646464;
+  }
+  .taxonomy-product_tag.wp-block-post-terms a,
+  .taxonomy-product_cat.wp-block-post-terms a {
+	  background-color: #e3ebeb;
+	  border-radius: 4px;
+	  color: #2c3337;
+	  display: inline-block;
+	  font-size: var(--wp--preset--font-size--x-small, 12px);
+	  font-weight: 500;
+	  margin-bottom: 0;
+	  margin-left: 0;
+	  padding: 2px 6px;
+  }
+  .taxonomy-product_tag.wp-block-post-terms a:hover,
+  .taxonomy-product_cat.wp-block-post-terms a:hover{
+	  background: #c9eae7;
+  }
+  
+  .woocommerce-product-short-description li::before {
+   content: "";
+	  display: inline-block;
+	  width: 16px;
+	  height: 13px;
+	  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"></path></svg>') no-repeat center center;
+	  background-size: contain;
+	  padding-right: 3px;
+  }
+  .woocommerce-product-short-description ul {
+	  padding: 0;
+  }
+  .woocommerce-product-short-description li {
+	  list-style: none;
+	  padding: 0;
+  }

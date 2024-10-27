@@ -1,0 +1,153 @@
+.color-scheme-rwb {
+  --primary: hsl(208, 56%, 46%);
+  --primary-h: 208;
+  --primary-s: 56%;
+  --primary-l: 46%;
+  --secondary: hsl(217, 32%, 23%);
+  --secondary-h: 217;
+  --secondary-s: 32%;
+  --secondary-l: 23%;
+}
+
+.color-scheme-green {
+  --primary: hsl(154, 97%, 14%);
+  --primary-h: 154;
+  --primary-s: 97%;
+  --primary-l: 14%;
+  --secondary: hsl(154, 100%, 20%);
+  --secondary-h: 154;
+  --secondary-s: 100%;
+  --secondary-l: 20%;
+}
+
+.color-scheme-blue {
+  --primary: hsl(208, 56%, 46%);
+  --primary-h: 208;
+  --primary-s: 56%;
+  --primary-l: 46%;
+  --secondary: hsl(217, 32%, 23%);
+  --secondary-h: 217;
+  --secondary-s: 32%;
+  --secondary-l: 23%;
+}
+
+.color-scheme-rwb,
+.color-scheme-green,
+.color-scheme-blue {
+  --primary-50a: hsla(
+    var(--primary-h),
+    var(--primary-s),
+    var(--primary-l),
+    0.5
+  );
+  --primary-400: hsl(
+    var(--primary-h),
+    calc(var(--primary-s) - 10%),
+    calc(var(--primary-l) + 10%)
+  );
+  --primary-500: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --primary-600: hsl(
+    var(--primary-h),
+    calc(var(--primary-s) + 10%),
+    calc(var(--primary-l) - 10%)
+  );
+  --primary-700: hsl(
+    var(--primary-h),
+    calc(var(--primary-s) + 20%),
+    calc(var(--primary-l) - 20%)
+  );
+
+  --secondary-50a: hsla(
+    var(--secondary-h),
+    var(--secondary-s),
+    var(--secondary-l),
+    0.5
+  );
+  --secondary-400: hsl(
+    var(--secondary-h),
+    calc(var(--secondary-s) - 10%),
+    calc(var(--secondary-l) + 10%)
+  );
+  --secondary-500: hsl(
+    var(--secondary-h),
+    var(--secondary-s),
+    var(--secondary-l)
+  );
+  --secondary-600: hsl(
+    var(--secondary-h),
+    calc(var(--secondary-s) + 10%),
+    calc(var(--secondary-l) - 10%)
+  );
+  --secondary-700: hsl(
+    var(--secondary-h),
+    calc(var(--secondary-s) + 20%),
+    calc(var(--secondary-l) - 20%)
+  );
+
+  a:not(.btn),
+  .btn-link,
+  .page-link {
+    color: var(--secondary-500);
+  }
+
+  a:not(.btn),
+  .btn-link {
+    &:hover {
+      color: var(--secondary-600);
+    }
+    &:active {
+      color: var(--secondary-700);
+    }
+  }
+
+  .btn-primary,
+  .wp-block-button__link {
+    color: var(--wp--preset--color--white);
+    border-color: var(--primary-500);
+    background-color: var(--primary-500);
+
+    &:hover {
+      color: var(--wp--preset--color--white);
+      border-color: var(--primary-600);
+      background-color: var(--primary-600);
+      text-decoration: none;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      border-color: var(--primary-700);
+      background-color: var(--primary-700);
+      color: var(--wp--preset--color--white);
+    }
+
+    &:focus,
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: 0 0 0 calc(0.25 * var(--wp--custom--spacer))
+        var(--primary-50a);
+    }
+  }
+
+  .btn-outline-primary {
+    border-color: var(--primary-500);
+    color: var(--primary-500);
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      border-color: var(--primary-500);
+      background-color: var(--primary-500);
+      color: var(--wp--preset--color--white);
+    }
+
+    &:focus,
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: 0 0 0 calc(0.25 * var(--wp--custom--spacer))
+        var(--primary-50a);
+    }
+  }
+
+  .page-item.active .page-link,
+  .badge-primary {
+    background-color: var(--secondary-500);
+    border-color: var(--secondary-500);
+  }
+}

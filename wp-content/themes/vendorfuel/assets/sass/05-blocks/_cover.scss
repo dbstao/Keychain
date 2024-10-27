@@ -1,0 +1,14 @@
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container {
+	& a,
+	& a:visited,
+	& a:not(.btn):not(.wp-block-button__link) {
+		color: #fff;
+	}
+
+	& a:hover,
+	& a:focus,
+	& a:active {
+		text-decoration: underline;
+	}
+}

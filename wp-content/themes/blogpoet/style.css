@@ -1,0 +1,308 @@
+/*
+Theme Name: Blogpoet
+Theme URI: https://websiteinwp.com/blogpoet-block-based-wordpress-theme-for-blogging/
+Author: WebsiteinWP
+Author URI: https://websiteinwp.com/
+Description: BlogPoet is a cutting-edge WordPress theme that seamlessly integrates with Full Site Editing, offering a block-based approach to website design. Tailored specifically for bloggers, this theme combines the power of WordPress's latest features with a sleek and minimalistic design, providing a seamless and enjoyable blogging experience. Explore more about Blogpoet at https://websiteinwp.com/blogpoet-block-based-wordpress-theme-for-blogging.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, e-commerce, full-site-editing, block-patterns, full-width-template, rtl-language-support, threaded-comments, translation-ready, block-styles, wide-blocks
+Version: 1.0.4
+Requires at least: 5.9
+Tested up to: 6.6
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blogpoet
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*=====================
+STYLE FOR CONTACT FORM 7 LAYOUT
+===============*/
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea,
+.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number,
+.wpcf7-form-control.wpcf7-select {
+  border-radius: 5px;
+  border: 1px solid #dad7d7;
+  padding: 15px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.wpcf7-form-control.wpcf7-select {
+  appearance: none;
+  position: relative;
+}
+.wpcf7-form-control.wpcf7-select:after {
+  content: ">";
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.wpcf7-form *::placeholder {
+  font-size: 14px;
+}
+form.wpcf7-form *::-moz-placeholder {
+  font-size: 14px;
+}
+form.wpcf7-form *::-webkit-input-placeholder {
+  font-size: 14px;
+}
+input[type="submit"] {
+  transition: all ease 0.23s;
+  -o-transition: all ease 0.23s;
+  -moz-transition: all ease 0.23s;
+  -webkit-transition: all ease 0.23s;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit {
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--dark-color);
+  border-radius: 0;
+  border: 0;
+  font-size: 16px;
+  padding: 15px 40px;
+}
+.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+  background: var(--wp--preset--color--dark-color);
+  color: var(--wp--preset--color--primary);
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form input,
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form select,
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form textarea {
+  border-radius: 0;
+  border: 1px solid var(--wp--preset--color--heading-color);
+}
+/*=====================
+STYLE FOR COMMENTS LAYOUT
+===============*/
+.wp-block-comments textarea#comment {
+  border-radius: 4px;
+}
+form.comment-form {
+  border-radius: 20px;
+  margin-top: 24px;
+}
+.wp-block-post-comments-form {
+  border-radius: 20px;
+}
+form.comment-form input[type="email"],
+form.comment-form input[type="text"],
+form.comment-form input[type="url"],
+form.comment-form textarea {
+  border-radius: 5px;
+  margin: 12px 0 25px;
+}
+form.comment-form .form-submit.wp-block-button {
+  margin-top: 25px;
+}
+.wp-block-comment-author-name {
+  font-weight: 600;
+}
+form.comment-form .form-submit.wp-block-button .wp-element-button {
+  border-radius: 40px;
+  color: var(--wp--preset--color--dark-color) !important;
+  border: 1px solid var(--wp--preset--color--dark-color);
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+}
+.wp-block-comment-date a {
+  color: var(--wp--preset--color--foregound);
+  font-size: 13px;
+}
+.wp-block-comment-template li {
+  margin-top: 50px;
+}
+.wp-block-comment-template li li {
+  margin-top: 10px;
+  padding-left: 60px;
+}
+a.comment-reply-link {
+  border: 1px solid;
+  padding: 5px 13px;
+  border-radius: 40px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.wp-block-post-comments-form {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+}
+.woocommerce ul.products li.product a img {
+  border-radius: 5px;
+  height: 350px;
+  object-fit: cover;
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 0 2.5% 2.992em 0;
+  width: 23.1%;
+}
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+  margin-right: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border-radius: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after {
+  border: 0;
+}
+.woocommerce #reviews #comments ol.commentlist {
+  padding: 0;
+  margin-top: 20px !important;
+}
+.woocommerce-page .input-text {
+  padding: 11px 30px;
+  border: 1px solid #817e7e;
+  border-radius: 5px;
+}
+.wp-block-post-excerpt__excerpt a,
+.entry-content.wp-block-post-content a,
+p a {
+  text-decoration: underline;
+}
+nav.wp-block-navigation ul li a:hover,
+.wp-block-button.is-style-outline a:hover {
+  color: var(--wp--preset--color--heading-color) !important;
+}
+.blogpoet-post-more.wp-block-read-more {
+  border-radius: 40px;
+}
+.blogpoet-post-more.wp-block-read-more:hover {
+  background: var(--wp--preset--color--light-color) !important;
+}
+.blogpoet-sidebar-categories.wp-block-categories li {
+  display: flex;
+  justify-content: space-between;
+}
+.blogpoet-navigations.wp-block-navigation .wp-block-navigation-item a {
+  padding: 0 15px;
+}
+.blogpoet-navigations.wp-block-navigation .wp-block-navigation-item a:hover {
+  color: var(--wp--preset--color--primary) !important;
+}
+.blogpoet-navigations.wp-block-navigation ul {
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  margin-block-start: 0;
+  gap: 0;
+}
+.blogpoet-navigations.wp-block-navigation .wp-block-navigation-item.current-menu-item a {
+  background-color: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--foreground-alt) !important;
+  border: solid 1px var(--wp--preset--color--dark-color) !important;
+  padding: 0 20px;
+  border-radius: 30px;
+  border-bottom-width: 3px !important;
+  border-right-width: 3px !important;
+}
+.blogpoet-pagination.wp-block-query-pagination {
+  margin-top: 40px;
+  gap: 10px;
+}
+.blogpoet-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers a,
+.blogpoet-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers .page-numbers {
+  width: 50px;
+  display: inline-block;
+  height: 50px;
+  background: var(--wp--preset--color--dark-color) !important;
+  color: var(--wp--preset--color--light-color) !important;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+  border: solid 1px var(--wp--preset--color--dark-color) !important;
+  border-bottom-width: 3px !important;
+  border-right-width: 3px !important;
+}
+.blogpoet-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers .page-numbers.current,
+.blogpoet-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers a:hover {
+  background: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--dark-color) !important;
+}
+.blogpoet-pagination.wp-block-query-pagination .wp-block-query-pagination-previous,
+.blogpoet-pagination.wp-block-query-pagination .wp-block-query-pagination-next {
+  font-weight: 600;
+}
+.wp-block-categories-list.blogpoet-footer-categories.wp-block-categories a,
+.wp-block-categories-list.blogpoet-footer-categories.wp-block-categories li {
+  color: var(--wp--preset--color--meta-color) !important;
+}
+.wp-block-categories-list.blogpoet-footer-categories.wp-block-categories a:hover {
+  color: var(--wp--preset--color--primary) !important;
+}
+.wp-block-categories-list.blogpoet-footer-categories.wp-block-categories li {
+  display: flex;
+  justify-content: space-between;
+}
+.wp-block-group.blogpoet-header.blogpoet-pro-header p {
+  color: var(--wp--preset--color--light-color);
+}
+.wp-block-group.blogpoet-featured-posts .swiper-button-next.tgv-ticker-next,
+.wp-block-group.blogpoet-featured-posts .swiper-button-prev.tgv-ticker-prev {
+  top: -45px !important;
+  background: #f9f9f9;
+  width: 36px;
+  height: 36px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--wp--preset--color--primary) !important;
+}
+.wp-block-group.blogpoet-featured-posts .swiper-button-prev.tgv-ticker-prev {
+  right: 40px !important;
+}
+.wp-block-group.blogpoet-featured-posts .swiper-button-next.tgv-ticker-next:after,
+.wp-block-group.blogpoet-featured-posts .swiper-button-prev.tgv-ticker-prev:after {
+  color: var(--wp--preset--color--dark-color) !important;
+}
+.swiper-pagination-bullet {
+  background: var(--wp--preset--color--primary) !important;
+  opacity: 0.35;
+}
+.swiper-pagination-bullet-active {
+  background: var(--wp--preset--color--primary) !important;
+  opacity: 1;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--wp--preset--color--dark-color) !important;
+}
+.blogpoet-sidebar-categories.wp-block-categories li a:hover,
+.wp-block-categories-list.is-style-blogpoet-categories-bullet-hide-style.wp-block-categories a:hover {
+  color: var(--wp--preset--color--primary) !important;
+}
+.wp-block-group.blogpoet-related-posts .tg-related-post {
+  grid-gap: 15px;
+}
+.wp-block-group.blogpoet-related-posts .tg-related-post .post-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--wp--preset--color--dark-color);
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+}
+.wp-block-group.blogpoet-related-posts .tg-related-post .post-box img {
+  height: 160px;
+  border-radius: 12px;
+}
+.wp-block-group.blogpoet-related-posts .tg-related-post .post-box .title-heading {
+  font-size: 18px;
+}
+.wp-block-group.blogpoet-related-posts .tg-related-post .post-box .title-heading a {
+  color: var(--wp--preset--color--dark-color);
+}
+.wp-block-group.blogpoet-related-posts .tg-related-post .post-box .title-heading a:hover {
+  color: var(--wp--preset--color--primary);
+}

@@ -1,0 +1,7 @@
+.page-template-canvas {
+	.entry-content {
+		& > *:first-child {
+			margin-top: 0;
+		}
+	}
+}
