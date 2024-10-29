@@ -204,7 +204,7 @@ function wp_nav_menu_setup() {
  *
  * @since 3.0.0
  *
- * @global array $wp_meta_boxes Global meta box state.
+ * @global array $wp_meta_boxes
  */
 function wp_initial_nav_menu_meta_boxes() {
 	global $wp_meta_boxes;

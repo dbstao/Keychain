@@ -10,7 +10,7 @@
 require_once __DIR__ . '/admin.php';
 require ABSPATH . 'wp-admin/includes/theme-install.php';
 
-$tab = ! empty( $_REQUEST['tab'] ) ? sanitize_text_field( $_REQUEST['tab'] ) : '';
+wp_reset_vars( array( 'tab' ) );
 
 if ( ! current_user_can( 'install_themes' ) ) {
 	wp_die( __( 'Sorry, you are not allowed to install themes on this site.' ) );
@@ -56,6 +56,7 @@ wp_localize_script(
 		'l10n'            => array(
 			'addNew'              => __( 'Add New Theme' ),
 			'search'              => __( 'Search Themes' ),
+			'searchPlaceholder'   => __( 'Search themes...' ), // Placeholder (no ellipsis).
 			'upload'              => __( 'Upload Theme' ),
 			'back'                => __( 'Back' ),
 			'error'               => sprintf(
@@ -216,7 +217,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 
 		<button type="button" class="button drawer-toggle" aria-expanded="false"><?php _e( 'Feature Filter' ); ?></button>
 
-		<form class="search-form"><p class="search-box"></p></form>
+		<form class="search-form"></form>
 
 		<div class="favorites-form">
 			<?php
