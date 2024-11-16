@@ -1,0 +1,8 @@
+@import './normalize.css';
+@import '@wordpress/components/build-style/style.css';
+@import './utilities.scss';
+
+img {
+  max-width: 100%;
+}
+

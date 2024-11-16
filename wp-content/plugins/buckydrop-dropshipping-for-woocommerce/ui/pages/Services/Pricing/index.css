@@ -1,0 +1,116 @@
+.services-pricing-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.services-pricing-page .col-12 {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .services-pricing-page .col-md-6 {
+    width: 25%;
+  }
+}
+.services-pricing-page .page-container {
+  background: #fff url(./img/bg.png) center top no-repeat;
+  background-size: 100%;
+  padding: 60px 0 0 0;
+}
+.services-pricing-page .page-header {
+  padding: 30px;
+}
+.services-pricing-page .page-header h1 {
+  color: #fff;
+}
+.services-pricing-page .page-body {
+  background-color: #fff;
+  padding: 30px;
+}
+.services-pricing-page .page-header-inner,
+.services-pricing-page .page-body-inner {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services-pricing-page .section:not(:last-child) {
+  margin-bottom: 20px;
+}
+.services-pricing-page .section-header {
+  margin-bottom: 20px;
+}
+.services-pricing-page .section-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.614;
+  margin-bottom: 0;
+}
+.services-pricing-page .box {
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+.services-pricing-page .box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.services-pricing-page .box-header {
+  background-color: #f3f3f3;
+  padding: 20px 16px;
+}
+.services-pricing-page .box-title {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.services-pricing-page .box-body {
+  padding: 20px 16px;
+}
+.services-pricing-page .list-item:not(:last-child) {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .services-pricing-page .page-container {
+    padding-top: 0;
+    padding-bottom:65px;
+  }
+  .services-pricing-page .page-header {
+    padding: 60px;
+  }
+  .services-pricing-page .page-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  .services-pricing-page .page-body {
+    padding: 60px;
+  }
+  .services-pricing-page .section:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .services-pricing-page .section-header {
+    margin-bottom: 56px;
+  }
+  .services-pricing-page .section-title {
+    font-size: 28px;
+  }
+  .services-fee-table th,
+  .services-fee-table td {
+    padding: 20px;
+  }
+  .services-fee-table thead th {
+    border-bottom: 1px solid #d3d3d3;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+  }
+  .services-fee-table td {
+    vertical-align: top;
+  }
+  .services-fee-table td.line {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0;
+  }
+}

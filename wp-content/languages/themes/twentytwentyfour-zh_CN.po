@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Four package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-12 05:11:40+0000\n"
+"PO-Revision-Date: 2024-11-14 19:05:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,7 +15,7 @@ msgstr ""
 #: style.css
 #, gp-priority: high
 msgid "Twenty Twenty-Four is designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.4."
-msgstr "Twenty Twenty-Four 的设计灵活多变，适用于任何网站。它收集的模板和模式可满足不同的需求，如展示业务、博客和写作或展示作品。只需对颜色和排版稍作调整，就能实现多种可能性。Twenty Twenty-Four带有风格变化和完整的页面设计，有助于加快网站建设过程，与网站编辑器完全兼容，并充分利用了WordPress 6.4中引入的新设计工具。"
+msgstr "二〇二四的设计灵活多变，适用于任何网站。它收集的模板和模式可满足不同的需求，如展示业务、博客和写作或展示作品。只需对颜色和排版稍作调整，就能实现多种可能性。二〇二四带有风格变化和完整的页面设计，有助于加快网站建设过程，与网站编辑器完全兼容，并充分利用了 WordPress 6.4 中引入的新设计工具。"
 
 #. Theme Name of the theme
 #: style.css
@@ -23,199 +23,204 @@ msgstr "Twenty Twenty-Four 的设计灵活多变，适用于任何网站。它�
 msgid "Twenty Twenty-Four"
 msgstr "二〇二四"
 
+#: patterns/text-centered-statement.php
+msgctxt "Pattern description"
+msgid "A centered text statement with a large amount of padding on all sides."
+msgstr "居中的文字说明，四边有大量填充。"
+
+#: patterns/hidden-posts-heading.php
+msgctxt "Pattern title"
+msgid "Posts heading"
+msgstr "文章标题"
+
 #: patterns/text-title-left-image-right.php
 msgctxt "Pattern description"
 msgid "A title, a paragraph and a CTA button on the left with an image on the right."
-msgstr ""
+msgstr "左边是标题、段落和 CTA 按钮，右边是图片。"
 
 #: patterns/text-project-details.php
 msgctxt "Pattern description"
-msgid "A text only section for project details."
-msgstr ""
+msgid "A text-only section for project details."
+msgstr "纯文字部分，用于介绍项目详情。"
 
 #: patterns/text-feature-grid-3-col.php
 msgctxt "Pattern description"
 msgid "A feature grid of 2 rows and 3 columns with headings and text."
-msgstr ""
+msgstr "2 行 3 列的功能网格，包含标题和文本。"
 
 #: patterns/text-faq.php:35
 msgctxt "Question in the FAQ pattern"
 msgid "Who is behind Études?"
-msgstr ""
+msgstr "谁是 Études 的幕后推手？"
 
 #: patterns/text-faq.php
 msgctxt "Pattern description"
-msgid "A FAQ section with a large FAQ heading and list of toggle questions and answers."
-msgstr ""
-
-#: patterns/text-centered-statement.php
-msgctxt "Pattern description"
-msgid "A centered text statement with a large paddings."
-msgstr ""
+msgid "A FAQ section with a large FAQ heading and a group of questions and answers."
+msgstr "常问问题版块有一个大的常问问题标题和一组问题及答案。"
 
 #: patterns/text-centered-statement-small.php
 msgctxt "Pattern description"
-msgid "A centered itallic text statement with compact padding."
-msgstr ""
+msgid "A centered italic text statement with compact padding."
+msgstr "居中的斜体文字说明，填充紧凑。"
 
 #: patterns/text-alternating-images.php
 msgctxt "Pattern description"
-msgid "A text section, then a two column section with text in one and image in another."
-msgstr ""
+msgid "A text section, then a two-column section with text in one column and an image in the other."
+msgstr "文字部分，然后是两栏部分，一栏是文字，另一栏是图片。"
 
 #: patterns/testimonial-centered.php
 msgctxt "Pattern description"
-msgid "A centered testimonial section with a avatar, name, and job title."
-msgstr ""
+msgid "A centered testimonial section with an avatar, name, and job title."
+msgstr "以头像、姓名和职位名称为中心的推荐部分。"
 
 #: patterns/team-4-col.php
 msgctxt "Pattern description"
 msgid "A team section, with a heading, a paragraph, and 4 columns for team members."
-msgstr ""
+msgstr "团队部分，包括一个标题、一个段落和 4 个团队成员栏。"
 
 #: patterns/posts-list.php
 msgctxt "Pattern description"
 msgid "A list of posts without images, 1 column."
-msgstr ""
+msgstr "不含图片的文章列表，1 栏。"
 
 #: patterns/posts-images-only-offset-4-col.php
 msgctxt "Pattern description"
 msgid "A list of posts with featured images only, 4 columns."
-msgstr ""
+msgstr "仅包含特色图片的文章列表，4 列。"
 
 #: patterns/posts-images-only-3-col.php
 msgctxt "Pattern description"
 msgid "A list of posts with featured images only, 3 columns."
-msgstr ""
+msgstr "仅包含特色图片的文章列表，3 列。"
 
 #: patterns/posts-grid-2-col.php
 msgctxt "Pattern description"
 msgid "A grid of posts featuring the first post, 2 columns."
-msgstr ""
+msgstr "以第一个帖子为特色的文章网格，2 列。"
 
 #: patterns/posts-3-col.php
 msgctxt "Pattern description"
 msgid "A list of posts, 3 columns."
-msgstr ""
+msgstr "文章列表，3 栏。"
 
 #: patterns/posts-1-col.php
 msgctxt "Pattern description"
 msgid "A list of posts, 1 column."
-msgstr ""
+msgstr "文章列表，1 栏。"
 
 #: patterns/page-portfolio-overview.php
 msgctxt "Pattern description"
 msgid "A full portfolio page with a section for project description, project details, a full screen image, and a gallery section with two images."
-msgstr ""
+msgstr "一个完整的作品集页面，包含项目描述、项目详情、全屏图片以及包含两张图片的图库部分。"
 
 #: patterns/page-newsletter-landing.php
 msgctxt "Pattern description"
 msgid "A block with a newsletter subscription CTA for a landing page."
-msgstr ""
+msgstr "用于着陆页的带有订阅时事通讯 CTA 的区块。"
 
 #: patterns/page-home-portfolio.php
 msgctxt "Pattern description"
 msgid "A portfolio home page with a description and a 4-column post section with only feature images."
-msgstr ""
+msgstr "带描述的作品集主页和仅有特色图片的 4 栏文章部分。"
 
 #: patterns/page-home-portfolio-gallery.php
 msgctxt "Pattern description"
-msgid "A porfolio home page that features a gallery."
-msgstr ""
+msgid "A portfolio home page that features a gallery."
+msgstr "以画廊为特色的作品集主页。"
 
 #: patterns/page-home-business.php
 msgctxt "Pattern description"
 msgid "A business home page with a hero section, a text section, a services section, a team section, a clients section, a FAQ section, and a CTA section."
-msgstr ""
+msgstr "企业主页，包括主人公部分、文字部分、服务部分、团队部分、客户部分、常见问题部分和 CTA 部分。"
 
 #: patterns/page-home-blogging.php
 msgctxt "Pattern description"
 msgid "A blogging home page with a hero section, a text section, a blog section, and a CTA section."
-msgstr ""
+msgstr "博客主页，包括主人公部分、文本部分、博客部分和 CTA 部分。"
 
 #: patterns/page-about-business.php
 msgctxt "Pattern description"
 msgid "A business about page with a hero section, a text section, a services section, a team section, a clients section, a FAQ section, and a CTA section."
-msgstr ""
+msgstr "企业简介页面，包括主人公部分、文字部分、服务部分、团队部分、客户部分、常见问题部分和 CTA 部分。"
 
 #: patterns/gallery-project-layout.php
 msgctxt "Pattern description"
 msgid "A gallery section with a project layout with 2 images."
-msgstr ""
+msgstr "带一个项目布局和 2 张图片的一个画廊部分。"
 
 #: patterns/gallery-offset-images-grid-4-col.php
 msgctxt "Pattern description"
 msgid "A gallery section with 4 columns and offset images."
-msgstr ""
+msgstr "带有 4 列和偏移图像的画廊部分"
 
 #: patterns/gallery-offset-images-grid-3-col.php
 msgctxt "Pattern description"
 msgid "A gallery section with 3 columns and offset images."
-msgstr ""
+msgstr "带有 3 列和偏移图像的画廊部分。"
 
 #: patterns/gallery-offset-images-grid-2-col.php
 msgctxt "Pattern description"
 msgid "A gallery section with 2 columns and offset images."
-msgstr ""
+msgstr "带有 2 栏和偏移图像的画廊部分。"
 
 #: patterns/gallery-full-screen-image.php
 msgctxt "Pattern description"
 msgid "A cover image section that covers the entire width."
-msgstr ""
+msgstr "覆盖整个宽度的封面图片部分。"
 
 #: patterns/footer.php
 msgctxt "Pattern description"
 msgid "A footer section with a colophon and 4 columns."
-msgstr ""
+msgstr "带有一个标题和 4 个栏目的页脚部分。"
 
 #: patterns/footer-colophon-3-col.php
 msgctxt "Pattern description"
 msgid "A footer section with a colophon and 3 columns."
-msgstr ""
+msgstr "带有一个标题和 3 个栏目的页脚部分。"
 
 #: patterns/footer-centered-logo-nav.php
 msgctxt "Pattern description"
 msgid "A footer section with a centered logo, navigation, and WordPress credits."
-msgstr ""
+msgstr "带有居中的 Logo、导航和 WordPress 认证的页脚部分。"
 
 #: patterns/cta-subscribe-centered.php
 msgctxt "Pattern description"
 msgid "Subscribers CTA section with a title, a paragraph and a CTA button."
-msgstr ""
+msgstr "带有标题、段落和 CTA 按钮的订阅者 CTA 部分"
 
 #: patterns/cta-services-image-left.php
 msgctxt "Pattern description"
 msgid "An image, title, paragraph and a CTA button to describe services."
-msgstr ""
+msgstr "描述服务的图片、标题、段落和 CTA 按钮。"
 
 #: patterns/cta-rsvp.php patterns/page-rsvp-landing.php
 msgctxt "Pattern description"
 msgid "A large RSVP heading sideways, a description, and a CTA button."
-msgstr ""
+msgstr "一个大的 RSVP 标题、说明和一个 CTA 按钮。"
 
 #: patterns/cta-pricing.php
 msgctxt "Pattern description"
 msgid "A pricing section with a title, a paragraph and three pricing levels."
-msgstr ""
+msgstr "定价部分包括标题、段落和三个定价等级。"
 
 #: patterns/cta-content-image-on-right.php
 msgctxt "Pattern description"
 msgid "A title, paragraph, two CTA buttons, and an image for a general CTA section."
-msgstr ""
+msgstr "标题、段落、两个 CTA 按钮和一张图片，用于一般 CTA 部分。"
 
 #: patterns/banner-project-description.php
 msgctxt "Pattern description"
 msgid "Project description section with title, paragraph, and an image."
-msgstr ""
+msgstr "包括标题、段落和图片的项目说明部分。"
 
 #: patterns/banner-hero.php
 msgctxt "Pattern description"
 msgid "A hero section with a title, a paragraph, a CTA button, and an image."
-msgstr ""
+msgstr "包含标题、段落、CTA 按钮和图片的主人公部分"
 
 #: patterns/footer.php:96
 msgid "Twitter/X"
-msgstr "Twitter/X"
+msgstr "Twitter / X"
 
 #: patterns/footer.php:74
 msgid "Contact Us"
@@ -452,27 +457,27 @@ msgstr "生锈"
 #: styles/onyx.json theme.json
 msgctxt "Color name"
 msgid "Accent / Five"
-msgstr "重音 / 五"
+msgstr "强调色 / 五"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
 msgid "Accent / Four"
-msgstr "重音 / 四"
+msgstr "强调色 / 四"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
 msgid "Accent / Three"
-msgstr "重音 / 三"
+msgstr "强调色 / 三"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
 msgid "Accent / Two"
-msgstr "重音/两个"
+msgstr "强调色 / 二"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
 msgid "Accent"
-msgstr "强调"
+msgstr "强调色"
 
 #: styles/onyx.json
 msgctxt "Gradient name"
@@ -532,12 +537,12 @@ msgstr "垂直软胡桃色至深灰色"
 #: styles/onyx.json
 msgctxt "Gradient name"
 msgid "Vertical soft driftwood to dark gray"
-msgstr "垂直软浮木至深灰色"
+msgstr "垂直软浮木色至深灰色"
 
 #: styles/onyx.json
 msgctxt "Duotone name"
 msgid "Dark gray and steel"
-msgstr "深灰色和钢"
+msgstr "深灰色和钢色"
 
 #: styles/onyx.json
 msgctxt "Duotone name"
@@ -572,7 +577,7 @@ msgstr "薄荷色"
 #: styles/maelstrom.json
 msgctxt "Color name"
 msgid "Contrast / 3"
-msgstr "对比度 / 3"
+msgstr "对比色 / 3"
 
 #: styles/maelstrom.json
 msgctxt "Style variation name"
@@ -647,12 +652,12 @@ msgstr "凛冬将至"
 #: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
 msgctxt "Font size name"
 msgid "Extra Extra Large"
-msgstr "特大"
+msgstr "加加大号"
 
 #: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
 msgctxt "Font size name"
 msgid "Extra Large"
-msgstr "特大号"
+msgstr "加大号"
 
 #: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
 msgctxt "Font size name"
@@ -667,12 +672,12 @@ msgstr "中号"
 #: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
 msgctxt "Font size name"
 msgid "Small"
-msgstr "小"
+msgstr "小号"
 
 #: styles/fossil.json styles/maelstrom.json theme.json
 msgctxt "Font family name"
 msgid "Cardo"
-msgstr "卡尔多"
+msgstr "Cardo"
 
 #: styles/fossil.json styles/ice.json theme.json
 msgctxt "Font family name"
@@ -683,13 +688,13 @@ msgstr "Inter"
 #: theme.json
 msgctxt "Color name"
 msgid "Contrast / Three"
-msgstr "对比/三"
+msgstr "对比色 / 三"
 
 #: styles/fossil.json styles/ice.json styles/mint.json styles/onyx.json
 #: theme.json
 msgctxt "Color name"
 msgid "Contrast / Two"
-msgstr "对比/两个"
+msgstr "对比色 / 二"
 
 #: styles/fossil.json
 msgctxt "Style variation name"
@@ -700,13 +705,13 @@ msgstr "化石"
 #: styles/mint.json theme.json
 msgctxt "Font family name"
 msgid "System Serif"
-msgstr "系统衬线"
+msgstr "System Serif"
 
 #: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
 #: styles/mint.json theme.json
 msgctxt "Font family name"
 msgid "System Sans-serif"
-msgstr "系统无衬线字体"
+msgstr "System Sans-serif"
 
 #: styles/ember.json styles/ice.json styles/maelstrom.json styles/mint.json
 msgctxt "Font family name"
@@ -722,7 +727,7 @@ msgstr "Instrument Sans"
 #: styles/mint.json styles/onyx.json theme.json
 msgctxt "Color name"
 msgid "Base / Two"
-msgstr "底座 / 两个"
+msgstr "基准色 / 二"
 
 #: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
 #: styles/mint.json styles/onyx.json styles/rust.json theme.json
@@ -733,7 +738,7 @@ msgstr "对比色"
 #: styles/ember.json styles/maelstrom.json
 msgctxt "Color name"
 msgid "Contrast / 2"
-msgstr "对比度 / 2"
+msgstr "对比色 / 2"
 
 #: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
 #: styles/mint.json styles/onyx.json styles/rust.json theme.json
@@ -849,7 +854,7 @@ msgstr "项目详情"
 #: patterns/text-feature-grid-3-col.php:112
 msgctxt "Sample content"
 msgid "Experience the fusion of imagination and expertise with Études Architectural Solutions."
-msgstr "通过Études 建筑解决方案，体验想象力与专业知识的融合。"
+msgstr "通过 Études 建筑解决方案，体验想象力与专业知识的融合。"
 
 #: patterns/text-feature-grid-3-col.php:108
 msgctxt "Sample heading"
@@ -883,7 +888,7 @@ msgstr "持续支持"
 #: patterns/text-feature-grid-3-col.php:100
 msgctxt "Sample feature content"
 msgid "Experience the fusion of imagination and expertise with Études Architectural Solutions."
-msgstr "通过Études 建筑解决方案，体验想象力与专业知识的融合。"
+msgstr "通过 Études 建筑解决方案，体验想象力与专业知识的融合。"
 
 #: patterns/text-feature-grid-3-col.php:39
 msgctxt "Sample feature heading"
@@ -908,23 +913,23 @@ msgstr "功能网格，3 列"
 #: patterns/text-faq.php:57
 msgctxt "Question in the FAQ pattern"
 msgid "Can I apply to be a part of the team or work as a contractor?"
-msgstr ""
+msgstr "我可以申请加入团队或作为承包商工作吗？"
 
 #: patterns/text-faq.php:46
 msgctxt "Question in the FAQ pattern"
 msgid "I'd like to get to meet fellow architects, how can I do that?"
-msgstr ""
+msgstr "我想结识建筑师同行，该怎么做？"
 
 #: patterns/text-faq.php:27 patterns/text-faq.php:38 patterns/text-faq.php:49
 #: patterns/text-faq.php:60
 msgctxt "Answer in the FAQ pattern"
 msgid "Études offers comprehensive consulting, management, design, and research solutions. Our vision is to be at the forefront of architectural innovation, fostering a global community of architects and enthusiasts united by a passion for creating spaces. Every architectural endeavor is an opportunity to shape the future."
-msgstr ""
+msgstr "Études 提供全面的咨询、管理、设计和研究解决方案。我们的愿景是站在建筑创新的最前沿，培养一个由建筑师和爱好者组成的全球社区，将他们对创造空间的热情凝聚在一起。每一项建筑工作都是塑造未来的机会。"
 
 #: patterns/text-faq.php:24
 msgctxt "Question in the FAQ pattern"
 msgid "What is your process working in smaller projects?"
-msgstr ""
+msgstr "您在小型项目中的工作流程是什么？"
 
 #: patterns/text-faq.php:15
 msgctxt "Heading of the FAQs"
@@ -1031,12 +1036,12 @@ msgstr "推荐信来源"
 #: patterns/testimonial-centered.php:18
 msgctxt "Testimonial Text or Review Text Got From the Person"
 msgid "“Études has saved us thousands of hours of work and has unlocked insights we never thought possible.”"
-msgstr "\"Études为我们节省了数千小时的工作时间，并让我们获得了从未想到过的洞察力\"。"
+msgstr "\"Études 为我们节省了数千小时的工作时间，并让我们获得了从未想到过的洞察力\"。"
 
 #: patterns/testimonial-centered.php:12
 msgctxt "Name of testimonial pattern"
 msgid "Testimonial"
-msgstr ""
+msgstr "评价"
 
 #: patterns/testimonial-centered.php
 msgctxt "Pattern title"
@@ -1298,7 +1303,7 @@ msgstr "搜索"
 #: patterns/hidden-post-navigation.php:12
 msgctxt "Label before the title of the next post. There is a space after the colon."
 msgid "Next: "
-msgstr "下一篇: "
+msgstr "下一篇："
 
 #: patterns/hidden-post-navigation.php:11
 msgctxt "Label before the title of the previous post. There is a space after the colon."
@@ -1306,6 +1311,7 @@ msgid "Previous: "
 msgstr "之前： "
 
 #: patterns/hidden-post-navigation.php:9 patterns/hidden-post-navigation.php:10
+#: patterns/hidden-posts-heading.php:10
 #: patterns/template-index-portfolio.php:16
 msgid "Posts"
 msgstr "文章"
@@ -1376,17 +1382,17 @@ msgstr "加拿大多伦多安大略美术馆"
 #: patterns/gallery-project-layout.php:49
 msgctxt "Sample text for the feature area"
 msgid "2. Case studies that celebrate the artistry can fuel curiosity and ignite inspiration."
-msgstr "2.颂扬艺术性的案例研究可以激发好奇心，点燃灵感。"
+msgstr "2. 颂扬艺术性的案例研究可以激发好奇心，点燃灵感。"
 
 #: patterns/gallery-project-layout.php:38
 msgctxt "Sample text for the feature area"
 msgid "Our comprehensive suite of professional services caters to a diverse clientele, ranging from homeowners to commercial developers. With a commitment to innovation and sustainability, Études is the bridge that transforms architectural dreams into remarkable built realities."
-msgstr "我们提供全面的专业服务，满足从业主到商业开发商等不同客户的需求。Études致力于创新和可持续发展，是将建筑梦想转化为非凡建筑现实的桥梁。"
+msgstr "我们提供全面的专业服务，满足从业主到商业开发商等不同客户的需求。Études 致力于创新和可持续发展，是将建筑梦想转化为非凡建筑现实的桥梁。"
 
 #: patterns/gallery-project-layout.php:26
 msgctxt "Sample text for the feature area"
 msgid "1. Through Études, we aspire to redefine architectural boundaries and usher in a new era of design excellence that leaves an indelible mark on the built environment."
-msgstr "1.我们希望通过 Études 重新定义建筑的界限，开创卓越设计的新时代，在建筑环境中留下不可磨灭的印记。"
+msgstr "1. 我们希望通过 Études 重新定义建筑的界限，开创卓越设计的新时代，在建筑环境中留下不可磨灭的印记。"
 
 #: patterns/gallery-project-layout.php:21
 msgid "An empty staircase under an angular roof in Darling Harbour, Sydney, Australia"
@@ -1511,7 +1517,7 @@ msgstr "我们的服务"
 #: patterns/cta-services-image-left.php:32
 msgctxt "Sample description of the services pattern"
 msgid "Experience the fusion of imagination and expertise with Études—the catalyst for architectural transformations that enrich the world around us."
-msgstr "通过Études，体验想象力与专业知识的融合--建筑变革的催化剂，丰富我们周围的世界。"
+msgstr "通过 Études，体验想象力与专业知识的融合--建筑变革的催化剂，丰富我们周围的世界。"
 
 #: patterns/cta-services-image-left.php:28
 msgctxt "Sample heading of the services pattern"
@@ -1661,7 +1667,7 @@ msgstr "它是如何工作的"
 #: patterns/cta-content-image-on-right.php:41
 msgctxt "Button text of this section"
 msgid "Download app"
-msgstr "下载本站App"
+msgstr "下载本站 App"
 
 #: patterns/cta-content-image-on-right.php:32
 #: patterns/text-alternating-images.php:52
