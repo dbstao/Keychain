@@ -1,3 +1,0 @@
-ID,Type,SKU,Name,Published,Is featured?,Visibility in catalog,Short description,Description,Regular price,Sale price,Stock,Stock status,Categories,Tags,Images
-123,simple,SIMPLE123,Sample Product,1,1,visible,This is a short description.,This is a full description of the sample product.,19.99,14.99,50,instock,"Category1,Category2","Tag1,Tag2",https://img.alicdn.com/imgextra/i4/6000000007378/O1CN01rTrzNV24NB8bBiEo0_!!6000000007378-0-tbvideo.jpg
-124,variable,VARI123,Variable Product,1,0,visible,Short desc for variable product.,This is a long description for a variable product.,,,,instock,Category1 > Subcategory,Tag1,https://img.alicdn.com/imgextra/i4/6000000007378/O1CN01rTrzNV24NB8bBiEo0_!!6000000007378-0-tbvideo.jpg
